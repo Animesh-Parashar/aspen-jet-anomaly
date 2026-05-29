@@ -1,0 +1,21 @@
+# Core deep learning
+# Install PyTorch separately with the correct CUDA version for your system:
+#   pip install torch==2.5.1 torchvision --index-url https://download.pytorch.org/whl/cu124
+torch>=2.5.0
+
+# Data loading and processing
+numpy==1.26.4
+h5py==3.16.0
+pandas==2.3.3
+tables==3.10.1        # required for pd.read_hdf (LHCO loader)
+
+# Evaluation and metrics
+scikit-learn==1.7.2
+scipy==1.15.3
+
+# Visualisation
+matplotlib==3.10.9
+umap-learn==0.5.12
+
+# Utilities
+tqdm==4.67.3

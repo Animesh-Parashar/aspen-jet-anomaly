@@ -1,0 +1,45 @@
+# Data files — too large for git (use Zenodo/CERN EOS for sharing)
+data/aspen/
+data/lhco/
+data/checkpoints/
+data/results/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Logs — ephemeral, not reproducibility-relevant
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Credentials — never commit
+*.pem
+*.key
+.env
+
+# Internal docs — not for public repo
+docs/versions.md
+docs/commands.md
+docs/background.md
+docs/thoughts.md
+docs/phase1_report.md
+docs/phase2_report.md
+docs/phase3_report.md
