@@ -62,7 +62,13 @@ def main(args):
     save_dir = Path(args.save_dir)
     save_dir.mkdir(parents=True, exist_ok=True)
 
-    dataset = PreprocessedJetDatasetCached(args.data, max_jets=args.max_jets)
+    from torch.utils.data import ConcatDataset
+    if len(args.data) == 1:
+        dataset = PreprocessedJetDatasetCached(args.data[0], max_jets=args.max_jets)
+    else:
+        datasets = [PreprocessedJetDatasetCached(p, max_jets=args.max_jets) for p in args.data]
+        dataset  = ConcatDataset(datasets)
+        print(f"Multi-batch dataset: {len(dataset):,} jets from {len(args.data)} files")
     _nw = min(args.num_workers, 4)
     loader  = DataLoader(dataset, batch_size=args.batch_size, shuffle=True,
                          num_workers=_nw, pin_memory=True,
@@ -121,7 +127,7 @@ def main(args):
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
-    p.add_argument("--data",     required=True)
+    p.add_argument("--data",     nargs="+", required=True)
     p.add_argument("--max_jets", type=int, default=None)
     p.add_argument("--max_constituents", type=int, default=50)
     p.add_argument("--epochs",   type=int, default=50)
