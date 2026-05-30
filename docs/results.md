@@ -11,8 +11,8 @@ jets, and 5 random seeds. AUC reported as mean +/- std across seeds.
 | Model | Objective | Training data | Epochs | 2-prong AUC | 3-prong AUC |
 |---|---|---|---|---|---|
 | A | Contrastive (NT-Xent) | Real CMS (AspenOpenJets) | 50 | 0.6065 +/- 0.0072 | 0.5165 +/- 0.0059 |
-| B2 | Contrastive (NT-Xent) | Simulation (LHCO QCD) | 75 | 0.6286 +/- 0.0043 | 0.5197 +/- 0.0051 |
-| C | Autoencoder, k-NN | Real CMS (AspenOpenJets) | 50 | 0.5467 +/- 0.0053 | 0.4009 +/- 0.0041 |
+| B2 | Contrastive (NT-Xent) | Simulation (LHCO QCD) | 75 | 0.6286 +/- 0.0043 | 0.5197 +/- 0.0074 |
+| C | Autoencoder, k-NN | Real CMS (AspenOpenJets) | 50 | 0.5467 +/- 0.0053 | 0.4012 +/- 0.0043 |
 
 **Key finding:** The contrastive objective outperforms the autoencoder baseline by
 ~0.08 AUC on 2-prong and ~0.12 AUC on 3-prong, regardless of data domain.
@@ -29,8 +29,8 @@ All checkpoints evaluated at their best epoch (determined via per-epoch AUC curv
 |---|---|---|---|
 | 2M jets | ep40 | 0.6065 +/- 0.0072 | 0.5165 +/- 0.0059 |
 | 4M jets | ep75 | 0.6178 +/- 0.0074 | 0.5267 +/- 0.0051 |
-| 6M jets | ep50 | 0.6235 +/- 0.0084 | 0.5276 +/- 0.0060 |
-| 10M jets | ep75 | 0.6270 +/- 0.0069 | 0.5335 +/- 0.0049 |
+| 6M jets | ep50 | 0.6235 +/- 0.0084 | 0.5276 +/- 0.0059 |
+| 10M jets | ep75 | 0.6270 +/- 0.0069 | 0.5335 +/- 0.0047 |
 
 Scaling is monotonic when epochs are scaled proportionally with data size (+0.011
 AUC per doubling). A 4M run at 50 epochs produced a spurious dip below 2M (training
@@ -48,10 +48,10 @@ log_pT_rel, log_E).
 | Model | Features | Scale | Epoch | 2-prong AUC | 3-prong AUC |
 |---|---|---|---|---|---|
 | A (real) | 7 (all) | 2M | ep40 | 0.6065 +/- 0.0072 | 0.5165 +/- 0.0059 |
-| A (real) | 4 (sim-compatible) | 2M | ep50 | 0.6411 +/- 0.0052 | 0.5175 +/- 0.0062 |
-| B2 (sim) | 7 (all) | 1M | ep75 | 0.6286 +/- 0.0043 | 0.5197 +/- 0.0051 |
-| A (real) | 7 (all) | 10M | ep75 | 0.6270 +/- 0.0069 | 0.5335 +/- 0.0049 |
-| A (real) | 4 (sim-compatible) | 10M | ep75 | 0.6444 +/- 0.0050 | 0.5091 +/- 0.0074 |
+| A (real) | 4 (sim-compatible) | 2M | ep50 | 0.6411 +/- 0.0052 | 0.5175 +/- 0.0061 |
+| B2 (sim) | 7 (all) | 1M | ep75 | 0.6286 +/- 0.0043 | 0.5197 +/- 0.0074 |
+| A (real) | 7 (all) | 10M | ep75 | 0.6270 +/- 0.0069 | 0.5335 +/- 0.0047 |
+| A (real) | 4 (sim-compatible) | 10M | ep75 | 0.6444 +/- 0.0050 | 0.5091 +/- 0.0075 |
 
 Removing detector-only features improves 2-prong AUC by +0.035 (2M) and +0.017
 (10M). The improvement arises because d0/dz/charge are informative during training
