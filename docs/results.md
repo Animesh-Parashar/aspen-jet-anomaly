@@ -8,16 +8,26 @@ jets, and 5 random seeds. AUC reported as mean +/- std across seeds.
 
 ## Main Ablation (2M jets)
 
-| Model | Objective | Training data | Epochs | 2-prong AUC | 3-prong AUC |
-|---|---|---|---|---|---|
-| A | Contrastive (NT-Xent) | Real CMS (AspenOpenJets) | 50 | 0.6065 +/- 0.0072 | 0.5165 +/- 0.0059 |
-| B2 | Contrastive (NT-Xent) | Simulation (LHCO QCD) | 75 | 0.6286 +/- 0.0043 | 0.5197 +/- 0.0074 |
-| C | Autoencoder, k-NN | Real CMS (AspenOpenJets) | 50 | 0.5467 +/- 0.0053 | 0.4012 +/- 0.0043 |
+| Model | Objective | Training data | Epochs | 2-prong AUC | 3-prong AUC | 1/εB @ εS=50% | 1/εB @ εS=30% |
+|---|---|---|---|---|---|---|---|
+| A | Contrastive (NT-Xent) | Real CMS (AspenOpenJets) | 50 | 0.6065 +/- 0.0072 | 0.5165 +/- 0.0059 | 2.95 | 5.13 |
+| B2 | Contrastive (NT-Xent) | Simulation (LHCO QCD) | 75 | 0.6286 +/- 0.0043 | 0.5197 +/- 0.0074 | 3.06 | 5.17 |
+| C (original) | Autoencoder, k-NN | Real CMS (AspenOpenJets) | 50 | 0.5467 +/- 0.0053 | 0.4012 +/- 0.0043 | 2.29 | 3.60 |
+| C (matched enc) | Autoencoder, k-NN | Real CMS (AspenOpenJets) | 50 | 0.5215 +/- 0.0044 | 0.3788 +/- 0.0039 | 2.10 | 3.40 |
+| A (10M) | Contrastive (NT-Xent) | Real CMS (AspenOpenJets) | 75 | 0.6270 +/- 0.0069 | 0.5335 +/- 0.0047 | 3.19 | 5.63 |
+| C matched (10M) | Autoencoder, k-NN | Real CMS (AspenOpenJets) | 75 | 0.5290 +/- 0.0052 | 0.3838 +/- 0.0032 | 2.20 | 3.50 |
 
 **Key finding:** The contrastive objective outperforms the autoencoder baseline by
 ~0.08 AUC on 2-prong and ~0.12 AUC on 3-prong, regardless of data domain.
 With matched training budgets, simulation-trained (B2) and real-data-trained (A)
 models perform similarly on the simulation benchmark.
+
+**Architecture-matched AE (Tier 3):** Training an autoencoder with the same encoder
+as Model A (4 layers, 8 heads, d_model=128, 827K encoder params) *widens* the
+contrastive gap at both scales — from +0.060 to +0.085 at 2M, and +0.098 at 10M.
+Larger autoencoders learn representations optimized for distributional fidelity rather
+than anomaly discrimination. The contrastive advantage is entirely due to the objective,
+not capacity.
 
 ---
 
@@ -199,3 +209,46 @@ Baseline = all five augmentations active.
   simulation-trained models.
 
 **Output:** `data/results/aug_ablation/no_{rotate,translate,smear,softdrop,collinear}/`
+
+---
+
+## SIC Curves (Fig 6)
+
+Significance Improvement Characteristic: SIC = εS / √εB evaluated from the best-seed
+ROC curve for each model. Model A (2M), A (10M), B2, and original C compared.
+
+| Model | 2-prong max SIC | 3-prong max SIC |
+|---|---|---|
+| Real CMS (2M, ep40) | 1.03 | 1.01 |
+| Real CMS (10M, ep75) | 1.05 | 1.01 |
+| Simulation (1M, ep75) | 1.06 | 1.00 |
+| Autoencoder (2M) | 1.02 | 1.00 |
+
+Max SIC ~1.05 reflects the single-jet k-NN evaluation strategy, which does not exploit
+the dijet resonance structure (m_jj) used by CATHODE/CWoLa. AspenOpenJets provides
+jet-level constituents without event pairing, precluding dijet conditioning.
+All models exceed SIC=1 on 2-prong (better than random), with contrastive models
+peaking earlier (lower εS threshold) than the autoencoder.
+
+**Output:** `data/results/paper_figures/fig6_sic.{pdf,png}`
+
+---
+
+## k-NN Sensitivity Sweep (Fig 7)
+
+Model A (10M, ep75), k ∈ {1, 5, 10, 20, 50}, 5 seeds each.
+
+| k | 2-prong AUC | 3-prong AUC |
+|---|---|---|
+| 1 | 0.6156 +/- 0.0058 | 0.5255 +/- 0.0082 |
+| 5 | 0.6241 +/- 0.0070 | 0.5296 +/- 0.0085 |
+| **10** | **0.6254 +/- 0.0071** | **0.5308 +/- 0.0087** |
+| 20 | 0.6257 +/- 0.0070 | 0.5325 +/- 0.0087 |
+| 50 | 0.6253 +/- 0.0071 | 0.5354 +/- 0.0086 |
+
+AUC is flat for k ≥ 10 on 2-prong (variation < 0.001). Small drop at k=1 only.
+k=10 sits at the plateau onset — the default choice is justified.
+3-prong shows a slight monotonic increase with k, consistent with smoother density
+estimation benefiting the more diffuse 3-prong signal topology.
+
+**Output:** `data/results/k_sweep/k_sweep_results.json`, `data/results/paper_figures/fig7_ksweep.{pdf,png}`
