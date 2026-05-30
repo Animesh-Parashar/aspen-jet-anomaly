@@ -40,7 +40,12 @@ Evaluated on the LHCO R&D benchmark (Z' signal, 5 seeds, k-NN scoring).
 
 Contrastive learning outperforms the autoencoder baseline by ~0.08-0.12 AUC.
 With matched training budgets, real-data and simulation-trained models are
-competitive on this simulation benchmark. See `docs/results.md` for full tables.
+competitive on this simulation benchmark.
+
+**Augmentation importance (2-prong AUC drop vs full baseline):**
+soft-drop −0.048 | rotation −0.040 | collinear split −0.017 | translation −0.017 | pT smearing +0.005 (redundant on real data)
+
+See `docs/results.md` for full tables.
 
 ---
 

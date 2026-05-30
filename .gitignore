@@ -36,6 +36,7 @@ Thumbs.db
 .env
 
 # Internal docs — not for public repo
+instructions.md
 docs/versions.md
 docs/commands.md
 docs/background.md
