@@ -76,8 +76,13 @@ def load_autoencoder(ckpt_path, device):
         d_model=a.get("d_model", 64),
         nhead=a.get("nhead", 4),
         num_layers=a.get("num_layers", 2),
+        dim_feedforward=a.get("dim_feedforward", 128),
         latent_dim=a.get("latent_dim", 128),
         max_constituents=a.get("max_constituents", 50),
+        dec_d_model=a.get("dec_d_model", None),
+        dec_nhead=a.get("dec_nhead", None),
+        dec_num_layers=a.get("dec_num_layers", None),
+        dec_dim_feedforward=a.get("dec_dim_feedforward", None),
     ).to(device)
     model.load_state_dict(state)
     model.eval()
@@ -352,6 +357,8 @@ def main(args):
             json_out[model_name][sig_name] = {
                 "aucs": r["aucs"], "mean_auc": r["mean_auc"], "std_auc": r["std_auc"],
                 "rej_50": r["rej_50"], "rej_30": r["rej_30"],
+                "fpr": r["fpr"],
+                "tpr": r["tpr"],
             }
     json_out["Model C (recon, reference)"] = {
         sig: {"aucs": recon_aucs[sig],

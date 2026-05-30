@@ -74,8 +74,13 @@ def main(args):
         d_model=args.d_model,
         nhead=args.nhead,
         num_layers=args.num_layers,
+        dim_feedforward=args.dim_feedforward,
         latent_dim=args.latent_dim,
         max_constituents=args.max_constituents,
+        dec_d_model=args.dec_d_model,
+        dec_nhead=args.dec_nhead,
+        dec_num_layers=args.dec_num_layers,
+        dec_dim_feedforward=args.dec_dim_feedforward,
     ).to(device)
     n_params = sum(p.numel() for p in model.parameters())
     print(f"Model C params: {n_params:,}  |  batch_size: {args.batch_size}")
@@ -122,10 +127,16 @@ if __name__ == "__main__":
     p.add_argument("--epochs",   type=int, default=50)
     p.add_argument("--batch_size", type=int, default=4096)
     p.add_argument("--lr",       type=float, default=1e-3)
-    p.add_argument("--d_model",  type=int, default=64)
-    p.add_argument("--nhead",    type=int, default=4)
-    p.add_argument("--num_layers", type=int, default=2)
-    p.add_argument("--latent_dim", type=int, default=128)
+    p.add_argument("--d_model",        type=int, default=64)
+    p.add_argument("--nhead",          type=int, default=4)
+    p.add_argument("--num_layers",     type=int, default=2)
+    p.add_argument("--dim_feedforward",type=int, default=128)
+    p.add_argument("--latent_dim",     type=int, default=128)
+    # Optional separate decoder config
+    p.add_argument("--dec_d_model",       type=int, default=None)
+    p.add_argument("--dec_nhead",         type=int, default=None)
+    p.add_argument("--dec_num_layers",    type=int, default=None)
+    p.add_argument("--dec_dim_feedforward", type=int, default=None)
     p.add_argument("--save_dir", default="data/checkpoints/phase2/model_C")
     p.add_argument("--save_every", type=int, default=10)
     p.add_argument("--num_workers", type=int, default=4)

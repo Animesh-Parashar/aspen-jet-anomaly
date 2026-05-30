@@ -17,12 +17,22 @@ import torch.nn.functional as F
 class JetAutoencoder(nn.Module):
     def __init__(self, input_dim=7, d_model=64, nhead=4, num_layers=2,
                  dim_feedforward=128, latent_dim=128, max_constituents=50,
-                 dropout=0.1):
+                 dropout=0.1,
+                 # Optional separate decoder config (defaults to encoder config)
+                 dec_d_model=None, dec_nhead=None, dec_num_layers=None,
+                 dec_dim_feedforward=None):
         super().__init__()
         self.max_constituents = max_constituents
         self.d_model = d_model
 
-        # --- Encoder (identical to JetEncoder backbone) ---
+        # Decoder dims default to encoder dims if not specified
+        _dec_d_model       = dec_d_model       if dec_d_model       is not None else d_model
+        _dec_nhead         = dec_nhead         if dec_nhead         is not None else nhead
+        _dec_num_layers    = dec_num_layers    if dec_num_layers    is not None else num_layers
+        _dec_dim_feedforward = dec_dim_feedforward if dec_dim_feedforward is not None else dim_feedforward
+        self._dec_d_model  = _dec_d_model
+
+        # --- Encoder ---
         self.input_proj = nn.Linear(input_dim, d_model)
         enc_layer = nn.TransformerEncoderLayer(
             d_model=d_model, nhead=nhead, dim_feedforward=dim_feedforward,
@@ -36,18 +46,19 @@ class JetAutoencoder(nn.Module):
             nn.Linear(d_model, latent_dim),
         )
 
-        # --- Bottleneck → token sequence ---
-        self.latent_to_seq = nn.Linear(latent_dim, max_constituents * d_model)
+        # --- Bottleneck → token sequence (uses decoder d_model) ---
+        self.latent_to_seq = nn.Linear(latent_dim, max_constituents * _dec_d_model)
 
         # --- Decoder transformer ---
         dec_layer = nn.TransformerEncoderLayer(
-            d_model=d_model, nhead=nhead, dim_feedforward=dim_feedforward,
+            d_model=_dec_d_model, nhead=_dec_nhead,
+            dim_feedforward=_dec_dim_feedforward,
             dropout=dropout, batch_first=True, norm_first=True,
         )
         self.decoder = nn.TransformerEncoder(
-            dec_layer, num_layers=num_layers, enable_nested_tensor=False
+            dec_layer, num_layers=_dec_num_layers, enable_nested_tensor=False
         )
-        self.output_proj = nn.Linear(d_model, input_dim)
+        self.output_proj = nn.Linear(_dec_d_model, input_dim)
 
     def encode(self, x, key_padding_mask=None):
         """Returns (B, latent_dim) embedding (NOT L2-normalized)."""
@@ -63,7 +74,7 @@ class JetAutoencoder(nn.Module):
     def decode(self, z, key_padding_mask=None):
         """z: (B, latent_dim) → reconstructed constituents (B, N, input_dim)."""
         B = z.size(0)
-        seq = self.latent_to_seq(z).view(B, self.max_constituents, self.d_model)
+        seq = self.latent_to_seq(z).view(B, self.max_constituents, self._dec_d_model)
         seq = self.decoder(seq, src_key_padding_mask=key_padding_mask)
         return self.output_proj(seq)
 
