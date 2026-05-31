@@ -1,4 +1,4 @@
-# Aspen Jet Anomaly Detection
+# Aspen Jet Anomaly Detection [![DOI](https://zenodo.org/badge/1253588950.svg)](https://doi.org/10.5281/zenodo.20472552)
 
 Self-supervised contrastive learning for jet anomaly detection on real CMS open data (AspenOpenJets).
 
