@@ -2,7 +2,7 @@
 
 Self-supervised contrastive learning for jet anomaly detection on real CMS open data (AspenOpenJets).
 
-**Paper:** [![DOI](https://zenodo.org/badge/1253588950.svg)](https://doi.org/10.5281/zenodo.20827792)
+**Paper:** [![DOI](https://zenodo.org/badge/1253588950.svg)](https://doi.org/10.5281/zenodo.20827792)  
 **Dataset:** [AspenOpenJets](https://www.fdr.uni-hamburg.de/record/16505) | [LHCO R&D](https://zenodo.org/records/6466204)
 
 ---
