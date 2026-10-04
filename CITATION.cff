@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: Please cite the preprint when using this repository.
+message: Please cite the paper when using this repository.
 type: software
 title: 'Contrastive Pretraining on Real LHC Jets: Transfer, Scorer Dependence and Mass Distortion'
 authors:

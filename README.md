@@ -2,9 +2,9 @@
 
 Code and numerical results accompanying **Contrastive Pretraining on Real LHC Jets: Transfer, Scorer Dependence and Mass Distortion**, by Animesh Parashar and Aditya Parashar.
 
-[Preprint PDF](paper/main.pdf) · [LaTeX source](paper/main.tex) · [Reproduction guide](REPRODUCIBILITY.md)
+[Reproduction guide](REPRODUCIBILITY.md)
 
-The study compares representations pretrained on real AspenOpenJets and simulated LHC Olympics background. It evaluates two- and three-prong anomaly-ranking benchmarks, alternative scorers, and signal efficiency versus background jet-mass distortion. The training samples have very little transverse-momentum overlap, so the comparison does not isolate a causal effect of the pretraining domain. See the paper for full results and limitations. An arXiv identifier has not yet been assigned.
+The study compares representations pretrained on real AspenOpenJets and simulated LHC Olympics background. It evaluates two- and three-prong anomaly-ranking benchmarks, alternative scorers, and signal efficiency versus background jet-mass distortion. The training samples have very little transverse-momentum overlap, so the comparison does not isolate a causal effect of the pretraining domain. See the paper for full results and limitations.
 
 ## Verify the reported numbers
 
@@ -21,8 +21,7 @@ The verifier recomputes AUCs from saved scores, checks three-seed summaries, and
 
 ## Repository layout
 
-- `paper/`: PDF, LaTeX, figures, tables, and per-seed AUC supplement.
-- `results/`: saved score arrays and quantitative summaries.
+- `results/`: saved score arrays, quantitative summaries, and the per-seed AUC table (`auc_per_seed.csv`).
 - `src/`: model, augmentation, and data-processing implementations.
 - `scripts/train/` and `configs/`: training implementation and published hyperparameters.
 - `verify_results.py`: independent numerical checks from saved results.

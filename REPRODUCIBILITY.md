@@ -1,16 +1,12 @@
 # Reproducing the reported results
 
-This release supports direct verification of the paper's numerical results from saved scores. A full rerun from raw events additionally needs the external datasets, preprocessing, trained checkpoints, and embedding caches; those large inputs are not part of this repository.
+This repository supports direct verification of the numerical results of the accompanying paper from saved scores. A full rerun from raw events additionally needs the external datasets, preprocessing, trained checkpoints, and embedding caches; those large inputs are not part of this repository.
 
 ## Numerical verification
 
 Install `requirements-reproduce.txt` in a Python 3.11 environment and run `python -B verify_results.py` from the repository root. The script recomputes all 176 reported AUC entries from the stored score arrays, checks the three-seed means and sample standard deviations, and checks operating-point efficiency counts and 290 stored bootstrap intervals. It uses NumPy and scikit-learn and does not retrain or select a model.
 
-The `results/` JSON files retain quantitative fields needed to interpret the NPZ arrays, plus the training-support, representation, and signal-kinematics diagnostics cited in the paper. The NPZ files are unchanged copies of the saved numerical arrays; only their public filenames were simplified. Machine-specific paths and run metadata were removed from the public JSON summaries without changing measured quantities. The paper's `paper/auc_per_seed.csv` exposes the per-seed scorer results in a small, readable format.
-
-## Manuscript source
-
-Compile `paper/main.tex` from within `paper/` using two runs of `pdflatex -interaction=nonstopmode -halt-on-error main.tex`. The included `paper/main.pdf` is the released preprint. No external bibliography tool or shell escape is required.
+The `results/` JSON files retain quantitative fields needed to interpret the NPZ arrays, plus the training-support, representation, and signal-kinematics diagnostics cited in the paper. The NPZ files are unchanged copies of the saved numerical arrays; only their public filenames were simplified. Machine-specific paths and run metadata were removed from the public JSON summaries without changing measured quantities. `results/auc_per_seed.csv` exposes the per-seed scorer results in a small, readable format.
 
 ## Training code and scope
 
