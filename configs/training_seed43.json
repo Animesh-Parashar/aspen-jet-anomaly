@@ -1,0 +1,23 @@
+{
+  "aspen_root": "data/aspen",
+  "lhco_root": "data/lhco",
+  "backbone": {
+    "width": 128,
+    "heads": 8,
+    "layers": 4,
+    "feedforward": 512,
+    "dropout": 0.1,
+    "pooling": "mean"
+  },
+  "train_jets": 100000,
+  "validation_jets": 8192,
+  "sample_seed": 20260925,
+  "training_seed": 43,
+  "batch_size": 128,
+  "epochs": 100,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "temperature": 0.1,
+  "split_probability": 0.0,
+  "gradient_clip": 1.0
+}

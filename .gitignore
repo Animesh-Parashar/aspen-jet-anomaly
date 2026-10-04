@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.log
+*.aux
+*.out
+*.toc
+*.synctex.gz
+/data/
+checkpoints/

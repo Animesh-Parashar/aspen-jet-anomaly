@@ -1,0 +1,847 @@
+{
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "results": {
+    "mass_high": {
+      "original_auc": 0.66368915,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 488.32098388671875,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.0242,
+          "background_passing": 242,
+          "rejection": 41.32231404958678
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 140.4967041015625,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.4718,
+          "background_passing": 4718,
+          "rejection": 2.11954217888936
+        }
+      ],
+      "common_pt_auc": 0.6322376214904727,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 490.245849609375,
+          "achieved_signal_efficiency": 0.30022482907316517,
+          "background_efficiency": 0.04751190930043185,
+          "rejection": 21.047354541715094
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 147.5510711669922,
+          "achieved_signal_efficiency": 0.5003049731907288,
+          "background_efficiency": 0.5036035008414321,
+          "rejection": 1.9856891350619632
+        }
+      ]
+    },
+    "pt_high": {
+      "original_auc": 0.8353047999999998,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 1717.329833984375,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.0559,
+          "background_passing": 559,
+          "rejection": 17.88908765652952
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 1644.77880859375,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.0836,
+          "background_passing": 836,
+          "rejection": 11.961722488038278
+        }
+      ],
+      "common_pt_auc": 0.4948082787603789,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 1732.8995361328125,
+          "achieved_signal_efficiency": 0.3001539050753213,
+          "background_efficiency": 0.28898514851485146,
+          "rejection": 3.460385438972163
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 1653.029052734375,
+          "achieved_signal_efficiency": 0.5002996538908905,
+          "background_efficiency": 0.4610148514851484,
+          "rejection": 2.169127516778524
+        }
+      ]
+    },
+    "multiplicity_high": {
+      "original_auc": 0.57440435,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 69.0,
+          "achieved_signal_efficiency": 0.3085,
+          "background_efficiency": 0.2694,
+          "background_passing": 2694,
+          "rejection": 3.711952487008167
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 53.0,
+          "achieved_signal_efficiency": 0.5115,
+          "background_efficiency": 0.4475,
+          "background_passing": 4475,
+          "rejection": 2.2346368715083798
+        }
+      ],
+      "common_pt_auc": 0.5770155778892863,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 70.0,
+          "achieved_signal_efficiency": 0.3104024227637664,
+          "background_efficiency": 0.2689649015553285,
+          "rejection": 3.7179572286843197
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 54.0,
+          "achieved_signal_efficiency": 0.5062554966098329,
+          "background_efficiency": 0.43827830547763685,
+          "rejection": 2.281655257634067
+        }
+      ]
+    },
+    "multiplicity_low": {
+      "original_auc": 0.42559564999999994,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": -42.0,
+          "achieved_signal_efficiency": 0.307,
+          "background_efficiency": 0.4101,
+          "background_passing": 4101,
+          "rejection": 2.43842965130456
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": -53.0,
+          "achieved_signal_efficiency": 0.503,
+          "background_efficiency": 0.5641,
+          "background_passing": 5641,
+          "rejection": 1.772735330615139
+        }
+      ],
+      "common_pt_auc": 0.42298442211072684,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": -42.0,
+          "achieved_signal_efficiency": 0.3009003801526285,
+          "background_efficiency": 0.40826488138841754,
+          "rejection": 2.449390201281148
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": -54.0,
+          "achieved_signal_efficiency": 0.5092626741184146,
+          "background_efficiency": 0.5762502041567534,
+          "rejection": 1.73535730275937
+        }
+      ]
+    },
+    "girth_high": {
+      "original_auc": 0.6837595,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.24124359748624066,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.0623,
+          "background_passing": 623,
+          "rejection": 16.051364365971107
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.07057716211413487,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.4063,
+          "background_passing": 4063,
+          "rejection": 2.461235540241201
+        }
+      ],
+      "common_pt_auc": 0.7117697258908278,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.24356879116783428,
+          "achieved_signal_efficiency": 0.30030107237084736,
+          "background_efficiency": 0.0536113937786747,
+          "rejection": 18.65275139326401
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.07057716211413487,
+          "achieved_signal_efficiency": 0.5001808561945019,
+          "background_efficiency": 0.36145376305830584,
+          "rejection": 2.7666055861166696
+        }
+      ]
+    },
+    "observable_density": {
+      "original_auc": 0.7691394,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.6608090508541336,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.0482,
+          "background_passing": 482,
+          "rejection": 20.74688796680498
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.38176437992216394,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.1985,
+          "background_passing": 1985,
+          "rejection": 5.037783375314861
+        }
+      ],
+      "common_pt_auc": 0.6059861882528964,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.6755561894256776,
+          "achieved_signal_efficiency": 0.3001219892762915,
+          "background_efficiency": 0.1528101953919925,
+          "rejection": 6.544065973050916
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.39838729895375546,
+          "achieved_signal_efficiency": 0.5003528468892735,
+          "background_efficiency": 0.4037705884751356,
+          "rejection": 2.4766538934313207
+        }
+      ]
+    },
+    "aspen_seed17": {
+      "original_auc": 0.359205825,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 2.37296724319458,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.5403,
+          "background_passing": 5403,
+          "rejection": 1.8508236165093466
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 2.180269241333008,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.6877,
+          "background_passing": 6877,
+          "rejection": 1.4541224371092047
+        }
+      ],
+      "common_pt_auc": 0.40046726029798996,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 2.343478202819824,
+          "achieved_signal_efficiency": 0.3004624244659423,
+          "background_efficiency": 0.47306781464376063,
+          "rejection": 2.1138618376586047
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 2.1654224395751953,
+          "achieved_signal_efficiency": 0.5004095860875486,
+          "background_efficiency": 0.6272676752823154,
+          "rejection": 1.5942157382012843
+        }
+      ]
+    },
+    "lhco_seed17": {
+      "original_auc": 0.607410075,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 6.322117328643799,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.1957,
+          "background_passing": 1957,
+          "rejection": 5.109862033725089
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 5.866561412811279,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.3363,
+          "background_passing": 3363,
+          "rejection": 2.9735355337496285
+        }
+      ],
+      "common_pt_auc": 0.5874042547405263,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 6.306364059448242,
+          "achieved_signal_efficiency": 0.3001964594740276,
+          "background_efficiency": 0.22097161965858544,
+          "rejection": 4.5254680286321864
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 5.838303089141846,
+          "achieved_signal_efficiency": 0.5000957473970893,
+          "background_efficiency": 0.36447042185295814,
+          "rejection": 2.7437068690403628
+        }
+      ]
+    },
+    "random_seed17": {
+      "original_auc": 0.540206775,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.24668826162815094,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.3104,
+          "background_passing": 3104,
+          "rejection": 3.2216494845360826
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.20978915691375732,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.4539,
+          "background_passing": 4539,
+          "rejection": 2.203128442388191
+        }
+      ],
+      "common_pt_auc": 0.4092458645516833,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.24751465022563934,
+          "achieved_signal_efficiency": 0.30043405486680475,
+          "background_efficiency": 0.4555940984826979,
+          "rejection": 2.1949362455097234
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.21158304810523987,
+          "achieved_signal_efficiency": 0.5000762432976822,
+          "background_efficiency": 0.6338738586770273,
+          "rejection": 1.5776009474300188
+        }
+      ]
+    },
+    "aspen_seed29": {
+      "original_auc": 0.457948475,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 1.687113881111145,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.4034,
+          "background_passing": 4034,
+          "rejection": 2.478929102627665
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 1.5316542387008667,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.5586,
+          "background_passing": 5586,
+          "rejection": 1.7901897601145722
+        }
+      ],
+      "common_pt_auc": 0.45541421102548935,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 1.677578091621399,
+          "achieved_signal_efficiency": 0.3001769553746206,
+          "background_efficiency": 0.3912324836890207,
+          "rejection": 2.5560249766859107
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 1.5194364786148071,
+          "achieved_signal_efficiency": 0.500019504099407,
+          "background_efficiency": 0.5715815516590288,
+          "rejection": 1.7495316234358451
+        }
+      ]
+    },
+    "lhco_seed29": {
+      "original_auc": 0.29809189999999997,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 5.31514835357666,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.5547,
+          "background_passing": 5547,
+          "rejection": 1.802776275464215
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 4.0692620277404785,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.8745,
+          "background_passing": 8745,
+          "rejection": 1.1435105774728416
+        }
+      ],
+      "common_pt_auc": 0.45614488021280875,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 4.996315956115723,
+          "achieved_signal_efficiency": 0.3001468126755369,
+          "background_efficiency": 0.32820599289484426,
+          "rejection": 3.046866972719769
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 3.91444993019104,
+          "achieved_signal_efficiency": 0.5002269567931006,
+          "background_efficiency": 0.5848164714409809,
+          "rejection": 1.7099381580960122
+        }
+      ]
+    },
+    "random_seed29": {
+      "original_auc": 0.573565275,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.27404001355171204,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.2615,
+          "background_passing": 2615,
+          "rejection": 3.8240917782026767
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.23474137485027313,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.393,
+          "background_passing": 3930,
+          "rejection": 2.544529262086514
+        }
+      ],
+      "common_pt_auc": 0.4412573385049959,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.27573034167289734,
+          "achieved_signal_efficiency": 0.3001769553746206,
+          "background_efficiency": 0.38972681077086396,
+          "rejection": 2.5658999390420183
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.23610042035579681,
+          "achieved_signal_efficiency": 0.5002766035915912,
+          "background_efficiency": 0.5694327507016096,
+          "rejection": 1.7561336237999654
+        }
+      ]
+    },
+    "aspen_seed43": {
+      "original_auc": 0.37330992500000004,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 2.0783607959747314,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.5083,
+          "background_passing": 5083,
+          "rejection": 1.9673421207948063
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 1.8744103908538818,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.6525,
+          "background_passing": 6525,
+          "rejection": 1.5325670498084292
+        }
+      ],
+      "common_pt_auc": 0.40052151631101457,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 2.0569589138031006,
+          "achieved_signal_efficiency": 0.30028156827144037,
+          "background_efficiency": 0.45505622685313635,
+          "rejection": 2.1975306368519103
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 1.8608102798461914,
+          "achieved_signal_efficiency": 0.5005425685835059,
+          "background_efficiency": 0.6201660296815031,
+          "rejection": 1.612471422392431
+        }
+      ]
+    },
+    "lhco_seed43": {
+      "original_auc": 0.7284349249999998,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 6.348281383514404,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.0915,
+          "background_passing": 915,
+          "rejection": 10.92896174863388
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 5.887974262237549,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.1917,
+          "background_passing": 1917,
+          "rejection": 5.216484089723526
+        }
+      ],
+      "common_pt_auc": 0.6147020143802034,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 6.399998664855957,
+          "achieved_signal_efficiency": 0.3006060455615762,
+          "background_efficiency": 0.1665535648796137,
+          "rejection": 6.004074429285307
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 5.936021327972412,
+          "achieved_signal_efficiency": 0.5003723509886805,
+          "background_efficiency": 0.32932078161590284,
+          "rejection": 3.036552977595964
+        }
+      ]
+    },
+    "random_seed43": {
+      "original_auc": 0.560136325,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.24450813233852386,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.2627,
+          "background_passing": 2627,
+          "rejection": 3.8066235249333844
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.2030087411403656,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.4153,
+          "background_passing": 4153,
+          "rejection": 2.4078979051288227
+        }
+      ],
+      "common_pt_auc": 0.42599833980456603,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.24645116925239563,
+          "achieved_signal_efficiency": 0.30010071207693834,
+          "background_efficiency": 0.39239327976228666,
+          "rejection": 2.548463624570237
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.20485348999500275,
+          "achieved_signal_efficiency": 0.5002570994921841,
+          "background_efficiency": 0.6072015094525366,
+          "rejection": 1.6468997267507082
+        }
+      ]
+    }
+  },
+  "summary": {
+    "original_auc": {
+      "aspen": {
+        "per_seed": [
+          0.359205825,
+          0.457948475,
+          0.37330992500000004
+        ],
+        "mean": 0.3968214083333333,
+        "sample_sd": 0.053405244299186895,
+        "conditional_event_bootstrap_95": [
+          0.3862242804166667,
+          0.407987306875
+        ]
+      },
+      "lhco": {
+        "per_seed": [
+          0.607410075,
+          0.29809189999999997,
+          0.7284349249999998
+        ],
+        "mean": 0.5446456333333333,
+        "sample_sd": 0.221930870193477,
+        "conditional_event_bootstrap_95": [
+          0.5348582704166667,
+          0.55500278375
+        ]
+      },
+      "random": {
+        "per_seed": [
+          0.540206775,
+          0.573565275,
+          0.560136325
+        ],
+        "mean": 0.5579694583333333,
+        "sample_sd": 0.016784482831646394,
+        "conditional_event_bootstrap_95": [
+          0.5458206954166667,
+          0.5702552672916668
+        ]
+      },
+      "paired_aspen_minus_lhco": {
+        "per_seed": [
+          -0.24820425000000002,
+          0.15985657500000006,
+          -0.3551249999999998
+        ],
+        "mean": -0.14782422499999992,
+        "sample_sd": 0.2717694201186377,
+        "conditional_event_bootstrap_95": [
+          -0.161701486875,
+          -0.1341418914583333
+        ]
+      }
+    },
+    "common_pt_auc": {
+      "aspen": {
+        "per_seed": [
+          0.40046726029798996,
+          0.45541421102548935,
+          0.40052151631101457
+        ],
+        "mean": 0.4188009958781646,
+        "sample_sd": 0.031707986036595796,
+        "conditional_event_bootstrap_95": [
+          0.40413115580788045,
+          0.43587737568364093
+        ]
+      },
+      "lhco": {
+        "per_seed": [
+          0.5874042547405263,
+          0.45614488021280875,
+          0.6147020143802034
+        ],
+        "mean": 0.5527503831111794,
+        "sample_sd": 0.08476885815570323,
+        "conditional_event_bootstrap_95": [
+          0.5388046051262346,
+          0.5667893236264322
+        ]
+      },
+      "random": {
+        "per_seed": [
+          0.4092458645516833,
+          0.4412573385049959,
+          0.42599833980456603
+        ],
+        "mean": 0.4255005142870818,
+        "sample_sd": 0.016011542363254576,
+        "conditional_event_bootstrap_95": [
+          0.41035390777636604,
+          0.44253314597807925
+        ]
+      },
+      "paired_aspen_minus_lhco": {
+        "per_seed": [
+          -0.1869369944425363,
+          -0.0007306691873193993,
+          -0.21418049806918887
+        ],
+        "mean": -0.13394938723301486,
+        "sample_sd": 0.11617216642022192,
+        "conditional_event_bootstrap_95": [
+          -0.15312468920791253,
+          -0.11208468159745227
+        ]
+      }
+    }
+  },
+  "pt_edges": [
+    787.418212890625,
+    1198.5738708496094,
+    1208.1620483398438,
+    1218.1536560058594,
+    1228.505810546875,
+    1239.9556884765625,
+    1251.6433227539062,
+    1264.4862182617187,
+    1277.9241455078125,
+    1292.4187133789062,
+    1307.8856811523438,
+    1327.1085876464845,
+    1347.4068359375,
+    1371.2268798828127,
+    1398.8574340820312,
+    1431.826416015625,
+    1473.7792724609376,
+    1531.1433349609376,
+    1608.8196899414063,
+    1740.948413085939,
+    3223.09912109375
+  ],
+  "bin_counts": [
+    {
+      "bin": 0,
+      "background": 520,
+      "signal": 19,
+      "supported": false
+    },
+    {
+      "bin": 1,
+      "background": 458,
+      "signal": 10,
+      "supported": false
+    },
+    {
+      "bin": 2,
+      "background": 504,
+      "signal": 11,
+      "supported": false
+    },
+    {
+      "bin": 3,
+      "background": 508,
+      "signal": 10,
+      "supported": false
+    },
+    {
+      "bin": 4,
+      "background": 500,
+      "signal": 19,
+      "supported": false
+    },
+    {
+      "bin": 5,
+      "background": 480,
+      "signal": 16,
+      "supported": false
+    },
+    {
+      "bin": 6,
+      "background": 508,
+      "signal": 13,
+      "supported": false
+    },
+    {
+      "bin": 7,
+      "background": 509,
+      "signal": 14,
+      "supported": false
+    },
+    {
+      "bin": 8,
+      "background": 481,
+      "signal": 22,
+      "supported": false
+    },
+    {
+      "bin": 9,
+      "background": 476,
+      "signal": 22,
+      "supported": false
+    },
+    {
+      "bin": 10,
+      "background": 518,
+      "signal": 24,
+      "supported": false
+    },
+    {
+      "bin": 11,
+      "background": 489,
+      "signal": 39,
+      "supported": true
+    },
+    {
+      "bin": 12,
+      "background": 508,
+      "signal": 38,
+      "supported": true
+    },
+    {
+      "bin": 13,
+      "background": 523,
+      "signal": 44,
+      "supported": true
+    },
+    {
+      "bin": 14,
+      "background": 488,
+      "signal": 70,
+      "supported": true
+    },
+    {
+      "bin": 15,
+      "background": 529,
+      "signal": 80,
+      "supported": true
+    },
+    {
+      "bin": 16,
+      "background": 518,
+      "signal": 145,
+      "supported": true
+    },
+    {
+      "bin": 17,
+      "background": 480,
+      "signal": 262,
+      "supported": true
+    },
+    {
+      "bin": 18,
+      "background": 494,
+      "signal": 698,
+      "supported": true
+    },
+    {
+      "bin": 19,
+      "background": 503,
+      "signal": 444,
+      "supported": true
+    }
+  ],
+  "excluded_by_class": {
+    "0": 5468,
+    "1": 180
+  },
+  "effective_sample_size": {
+    "0": 2371.2236219576585,
+    "1": 1774.5429170009113
+  },
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 20261003,
+    "conditional_on": "all fitted models, fixed reference events and bin edges; weights recomputed per resample"
+  }
+}

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: Please cite the preprint when using this repository.
+type: software
+title: 'Contrastive Pretraining on Real LHC Jets: Transfer, Scorer Dependence and Mass Distortion'
+authors:
+  - family-names: Parashar
+    given-names: Animesh
+  - family-names: Parashar
+    given-names: Aditya
+version: 2.0.0
+date-released: '2026-10-04'
+license: MIT
