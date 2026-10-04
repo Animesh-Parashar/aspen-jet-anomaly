@@ -1,0 +1,15 @@
+{
+  "stage": "post_evaluation_physics_diagnostic",
+  "sha256": {
+    "scripts/validation/physics_operating_points.py": "81f98aaa7bff50b7305f4dbd6b1aeadd501fecb8e3ce4fb595a2bbc87a8a2055",
+    "scripts/hpc/physics_operating_points.pbs": "4996a1736fb946d037e7fe3ece67d86183d609f157d91d2736fc762422b4f4bf",
+    "tests/test_physics_operating_points.py": "d7087eeed1d942a43a5bfaf6ed6ed6852c19f6cc283cf3a398c3e5203e588ed9",
+    "docs/physics_operating_points_protocol_20261003.md": "cc76d8da22e4b46b271e649068dfee0eebad232d9a579e62a7ff3a1efdee2a33",
+    "data/results/scorer_robustness_26312.rachel.json": "e9ea9f78ec66c717bf3a79f972d03d12eb1f4f3e49be3f7873558ecf81578356",
+    "data/results/scorer_robustness_26312.rachel.npz": "190fc7ab9ddbee0921491048755e62cb028b59fc4c3815615db769dc43a43dc7",
+    "data/results/scorer_robustness_lock_20261003.json": "e893bd53182ef5400c01aab98248b13c4d09b88699fd1293476eea9eaa6f4375",
+    "data/results/frozen_final_two_26302.rachel.npz": "ede00036b87d0a986ceb16e20aa05347d8b6606b71ec45f4d9fbf94d2b716e70",
+    "data/results/frozen_final_three_26302.rachel.npz": "1a689818dcec8ff9f8c35a0f4ae08432b3545a9158a4e7ee39d6c1649ea981d6"
+  },
+  "tests": "8 tests passed including independent KS/JSD and explicit duplicate bootstrap checks"
+}

@@ -1,0 +1,18 @@
+{
+  "tables/physics_10.tex": "0101199d6b77393fa070c349414ca75235ac5829c8048435d8aacb8f0688a9b4",
+  "tables/selected_counts.tex": "a91700c29573cfb7bdc39f0b8cd932225be9c39f5cd64e32755e7c53829da651",
+  "tables/physics_5.tex": "d2138a69e605c7e2f2e94132957ed8977d3365c5a48d8f4d90f9909f2d69d26a",
+  "tables/diagnostics.tex": "95856c90e3b6f69dc7c99e9dca4405cd84e03d82a8fb7a11499589bbae698b4f",
+  "tables/seeds.tex": "19127c7f056eecd4c6633a02c0ea3152b99736b9f53cc9e27a8710af6b768911",
+  "tables/scorers.tex": "aeeba4a6ad1ee7624fde37ab683ebb37451bbf8ed7c3aae5583fbada671c5a84",
+  "tables/final.tex": "68d864039cfd53a5bf3eb5f349b3d95e3866c70a3067758ae5b66460c2bfdfea",
+  "figures/auc_seeds.pdf": "6ab5585b07a21a0512ff6856f73a906feb8225bda4f0d1d59627a24c313c9c50",
+  "figures/representation_diagnostics.pdf": "65b96a636681d6e8243bacfa58acd129784a335879fcf65d5b986549bd87ca07",
+  "figures/physics_tradeoff.pdf": "99faa5e5f388805d852a8d3e73b8766af81dd9f51b5c123cda993359d11a3bab",
+  "figures/signal_kinematics.pdf": "69b1944cb65952840000aca32eb3f01cd140a2bca65b73d4c39dfda4ef453217",
+  "figures/signal_mass_losses.pdf": "f2041f3a65b5af72c29564e0ed42d3e358e337ba384cb57c6a8c316cfca6c8eb",
+  "figures/scorer_sensitivity.pdf": "ba39ecf9caed8e0237ccbbc8ed5977246222c65bbc9ef4748b071351b4a8643a",
+  "figures/training_support.pdf": "76ab91184101b2f49bc6159c61e825481ed50d7845a8c40187fce5d382ac06ce",
+  "figures/acceptance_profiles.pdf": "60bc29b5ccdc5665bd42b16210baf1e01a34ca341b6fb458f1dcf83acfe63039",
+  "auc_per_seed.csv": "7a01997aaac8a52df6030e7de930e03f8ba6861eb71e7cd79bd49b0489f427f6"
+}

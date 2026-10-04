@@ -1,0 +1,11 @@
+{
+  "data/results/signal_kinematics_20261003.json": "2ab4b5011e5efb12b79e358362613486e3e513f63ec665ce10ba39e0f889af1d",
+  "manuscript/revision_20261002/signal_kinematics_assets.py": "45c261ba2d19ccff244946f80e3078f64794ff44e242f08905d46eae07985570",
+  "tests/test_signal_kinematics.py": "22f9d42fbc40c6f32c4b3cc735327782e1518b9207b9193fe0d209f13ab7390d",
+  "scripts/validation/signal_kinematics.py": "4fd3d9482aa0fb05cf5128345839b6fa1d328a8cafa56971dfeebbcbddf5df87",
+  "docs/signal_kinematics_protocol_20261003.md": "f6619c7ceb649f327eed385cb00b9668b2f3210b0e6320d56337d88a2e369e09",
+  "data/results/frozen_final_two_26302.rachel.npz": "ede00036b87d0a986ceb16e20aa05347d8b6606b71ec45f4d9fbf94d2b716e70",
+  "data/results/frozen_final_two_26302.rachel.json": "f9254b011bf0a267c959253f8d57816dbca7662a84e08c17408847c5a9df172d",
+  "data/results/frozen_final_three_26302.rachel.npz": "1a689818dcec8ff9f8c35a0f4ae08432b3545a9158a4e7ee39d6c1649ea981d6",
+  "data/results/frozen_final_three_26302.rachel.json": "c7848ca7329f25ae01b61f5b6f8c2f0bee002b36255234d8b1ace6f9c86537d3"
+}

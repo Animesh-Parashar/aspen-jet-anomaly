@@ -1,0 +1,5 @@
+# Recorded asset-reproduction environment (Python 3.11).
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.9.0
+matplotlib==3.10.8

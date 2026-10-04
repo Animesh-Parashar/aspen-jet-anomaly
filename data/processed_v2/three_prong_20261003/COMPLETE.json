@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "schema": "jet-preprocessing-v2.0",
+    "domain": "lhco",
+    "topology": "three_prong",
+    "namespace": "LHCO_RD_qqq_v1",
+    "features": [
+      "eta_rel",
+      "phi_rel",
+      "log_pt_fraction",
+      "log_pt_GeV"
+    ],
+    "source": "data/lhco/events_anomalydetection_Z_XY_qqq.h5",
+    "recorded_verified_md5": "54e123a86143b668f9cb76905152a124",
+    "max_constituents": 50,
+    "seed": 20260925,
+    "event_id_encoding": "negative one minus raw row; namespace LHCO_RD_qqq_v1",
+    "clustering": "anti-kt R=0.8 massless inputs E scheme leading vector pT",
+    "axis": "full constituent sum before truncation",
+    "normalization": "full scalar constituent pT before truncation",
+    "partitions": "signal validation/test 50/50 event hash; no training/reference",
+    "exposure": "Historical full-sample evaluation possible; new partitions are not claimed historically unseen",
+    "source_sha256": {
+      "scripts/preprocess/three_prong_v2.py": "a4c72c7bd0c3e28e8eeff4232d952af8b0b61d11258fdfe88582aaef0b281c6f",
+      "src/data/corrected_preprocessing.py": "d6f208c67fb74c623e6487653bc3bd1604cde7832f88ae95a1d1776f72cc2f17"
+    }
+  },
+  "source_rows_examined": 100000,
+  "output_counts": {
+    "signal/validation": 49945,
+    "signal/test": 50055
+  },
+  "rejected": {},
+  "elapsed_seconds": 148.32828402891755
+}

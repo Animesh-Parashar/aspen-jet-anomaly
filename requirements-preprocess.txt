@@ -1,0 +1,8 @@
+# Install in an isolated Python 3.11 environment; no GPU packages needed.
+numpy==1.26.4
+h5py==3.11.0
+hdf5plugin==7.1.0
+fastjet==3.5.1.5
+awkward==2.14.0
+awkward-cpp==57
+vector==1.9.0

@@ -1,212 +1,64 @@
-# Aspen Jet Anomaly Detection [![DOI](https://zenodo.org/badge/1253588950.svg)](https://doi.org/10.5281/zenodo.20472552)
+# Contrastive Pretraining on Real LHC Jets
 
-Self-supervised contrastive learning for jet anomaly detection on real CMS open data (AspenOpenJets).
+Code and saved numerical results for **Contrastive Pretraining on Real LHC Jets:
+Transfer, Scorer Dependence and Mass Distortion**. The [manuscript PDF](manuscript/revision_20261002/submission/main.pdf)
+and [LaTeX source](manuscript/revision_20261002/submission/main.tex) are included.
+The manuscript is prepared as a preprint; no arXiv identifier has been assigned.
 
-**Paper:** [![DOI](https://zenodo.org/badge/1253588950.svg)](https://doi.org/10.5281/zenodo.20827792)  
-**Dataset:** [AspenOpenJets](https://www.fdr.uni-hamburg.de/record/16505) | [LHCO R&D](https://zenodo.org/records/6466204)
+## What the study finds
 
----
+We compare contrastive encoders trained on 100,000 real AspenOpenJets or simulated
+LHC Olympics jets, using three matched seeds, random backbones and simple jet
+observables as controls. The real and simulated training samples have a large
+momentum mismatch: only 24 selected Aspen training jets lie in the simulated
+reference sample's central 90% momentum range. The comparison therefore does not
+identify a causal effect of real versus simulated pretraining.
 
-## What is this?
+On the momentum-balanced two-prong queries, raw nearest-neighbor mean AUCs are
+0.541 (Aspen), 0.564 (simulation) and 0.517 (random). Three-prong values are
+0.419, 0.553 and 0.426. High jet momentum alone gives AUC 0.833/0.835 in the
+original two-/three-prong populations; after the specified balancing, its AUC
+is about 0.494/0.495. The paper also measures scorer sensitivity, signal
+retention and background mass distortion. These are results for the specified
+pipeline and public benchmarks, not a validated experimental search.
 
-The LHC produces jets (collimated sprays of particles from quark/gluon collisions)
-at an enormous rate. Most jets are ordinary QCD background. A tiny fraction may
-come from undiscovered particles. Since we do not know what new physics looks like,
-we need model-agnostic anomaly detection: find unusual jets without knowing in
-advance what to search for.
+## Reproduce the reported results
 
-We train a transformer encoder with NT-Xent contrastive loss on up to 10M real
-CMS jets from AspenOpenJets (CMS 2016 Open Data, 13 TeV). After training, jets
-from new-physics decays should appear far from the background cluster in latent
-space. The distance to the k-th nearest background neighbor is the anomaly score.
-
-**This is the first constituent-level contrastive anomaly detection on real Run-2
-CMS data.** Prior work (JetCLR, AnomalyCLR, DarkCLR) used Monte Carlo simulation
-for training.
-
----
-
-## Key Results
-
-Evaluated on the LHCO R&D benchmark (Z' signal, 5 seeds, k-NN scoring).
-
-| Model | Training data | Features | Best epoch | 2-prong AUC |
-|---|---|---|---|---|
-| A (contrastive) | Real CMS, 2M jets | 7 | ep40 | 0.6065 +/- 0.0072 |
-| A (contrastive) | Real CMS, 10M jets | 7 | ep75 | 0.6270 +/- 0.0069 |
-| A (contrastive) | Real CMS, 10M jets | 4 (sim-compatible) | ep75 | 0.6444 +/- 0.0050 |
-| B2 (contrastive) | Simulation, 1M jets | 7 | ep75 | 0.6286 +/- 0.0043 |
-| C (autoencoder) | Real CMS, 2M jets | 7 | ep50 | 0.5467 +/- 0.0053 |
-
-Contrastive learning outperforms the autoencoder baseline by ~0.08-0.12 AUC.
-With matched training budgets, real-data and simulation-trained models are
-competitive on this simulation benchmark.
-
-**Augmentation importance (2-prong AUC drop vs full baseline):**
-soft-drop −0.048 | rotation −0.040 | collinear split −0.017 | translation −0.017 | pT smearing +0.005 (redundant on real data)
-
-See `docs/results.md` for full tables.
-
----
-
-## Repository Structure
-
-```
-src/
-  models/         JetEncoder (transformer + NT-Xent), JetAutoencoder
-  data/           AspenOpenJets loader, LHCO loader, preprocessed loader
-  augmentations/  JetAugmentation: rotate, translate, pT smear, soft drop, collinear split
-  anomaly/        KNNAnomalyScorer
-scripts/
-  preprocess/     preprocess_aspen.py, preprocess_lhco_bg.py, inspect_data.py
-  train/          train_contrastive.py, train_autoencoder.py, augmentation_ablation.py
-  eval/           ablation_eval.py, epoch_auc.py, scaling_curve.py,
-                  latent_viz.py, mass_decorr.py, signal_injection.py,
-                  substructure_overlay.py
-docs/
-  architecture.md   Model architecture and training configuration
-  results.md        Final results tables and diagnostic evaluations
-```
-
-Data, checkpoints, and logs are not tracked in git. See the Data section below
-for download instructions.
-
----
-
-## Setup
+The repository includes the saved score arrays and numerical summaries needed
+to verify tables and regenerate figures. Use Python 3.11 in an isolated
+environment:
 
 ```bash
-git clone git@github.com:Animesh-Parashar/aspen-jet-anomaly.git
-cd aspen-jet-anomaly
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements-reproduce.txt
+python -B manuscript/revision_20261002/verify_paper_results.py
+python -B manuscript/revision_20261002/physics_results.py
+python -B manuscript/revision_20261002/diagnostic_assets.py
+python -B manuscript/revision_20261002/signal_kinematics_assets.py
+python -B manuscript/revision_20261002/build_assets.py
 ```
 
----
+Run these commands from the repository root. The manuscript can be compiled
+from `manuscript/revision_20261002/submission/main.tex` with a standard LaTeX
+installation. [Detailed reproduction notes](manuscript/revision_20261002/REPRODUCIBILITY.md)
+explain the recorded inputs and numerical checks.
 
-## Data
+The raw Aspen and LHCO datasets, processed HDF5 arrays, trained checkpoints and
+full embedding caches are not included. Regenerating the model scores requires
+those inputs and a training rerun; the saved scores support exact numerical
+verification of the reported tables and figures. The research scripts contain
+run-specific provenance guards and HPC settings, which must be adapted for a
+new run without relabeling it as the original experiment.
 
-### Download
+## Repository contents
 
-```bash
-# AspenOpenJets (one batch ~8 GB, we use batches 0-4)
-wget -c "https://www.fdr.uni-hamburg.de/record/16505/files/RunG_batch0.h5" \
-     -O data/aspen/RunG_batch0.h5
+- `manuscript/revision_20261002/`: PDF, LaTeX, figures, tables and asset builders.
+- `data/results/`: saved scores and numerical summaries used in the paper.
+- `src/`, `scripts/`, `configs/`: preprocessing, model, training and evaluation code.
+- `tests/`: focused physics and numerical checks.
+- `docs/`: protocols and result summaries needed to interpret the reported study.
 
-# LHCO background (2.6 GB)
-wget -c "https://zenodo.org/records/6466204/files/events_anomalydetection_v2.h5" \
-     -O data/lhco/events_anomalydetection_v2.h5
-
-# LHCO 3-prong signal
-wget -c "https://zenodo.org/records/6466204/files/events_anomalydetection_Z_XY_qqq.h5" \
-     -O data/lhco/events_anomalydetection_Z_XY_qqq.h5
-```
-
-### Preprocess
-
-```bash
-# Convert raw Aspen HDF5 to float16 preprocessed format (run once per batch)
-python scripts/preprocess/preprocess_aspen.py \
-  --input  data/aspen/RunG_batch0.h5 \
-  --output data/aspen/RunG_batch0_processed.h5
-
-# Preprocess LHCO background (run once)
-python scripts/preprocess/preprocess_lhco_bg.py \
-  --lhco data/lhco/events_anomalydetection_v2.h5 \
-  --out  data/lhco/lhco_bg_jets.h5
-```
-
----
-
-## Training
-
-Always run inside `screen` to survive SSH disconnects:
-
-```bash
-screen -dmS <name> bash -c \
-  'source venv/bin/activate && python scripts/train/... 2>&1 | tee logs/<name>.log'
-```
-
-```bash
-# Model A - real data, 2M jets (baseline)
-python scripts/train/train_contrastive.py \
-  --data data/aspen/RunG_batch0_processed.h5 --data_type aspen \
-  --epochs 50 --batch_size 4096 --lr 3e-4 \
-  --save_dir data/checkpoints/model_A
-
-# Model A - real data, 10M jets
-python scripts/train/train_contrastive.py \
-  --data data/aspen/RunG_batch{0..4}_processed.h5 --data_type aspen \
-  --epochs 75 --batch_size 8192 --lr 1e-4 --grad_clip 0.5 \
-  --save_dir data/checkpoints/model_A_10M
-
-# Model B2 - simulation baseline (LHCO QCD)
-python scripts/train/train_contrastive.py \
-  --data data/lhco/lhco_bg_jets.h5 --data_type sim \
-  --epochs 75 --batch_size 4096 --lr 3e-4 \
-  --save_dir data/checkpoints/model_B2
-
-# Model C - autoencoder baseline
-python scripts/train/train_autoencoder.py \
-  --data data/aspen/RunG_batch0_processed.h5 \
-  --epochs 50 --save_dir data/checkpoints/model_C
-```
-
----
-
-## Evaluation
-
-```bash
-# Ablation: fair k-NN comparison across all models (5 seeds)
-python scripts/eval/ablation_eval.py \
-  --ckpt_A  data/checkpoints/model_A/encoder_epoch040.pt \
-  --ckpt_B2 data/checkpoints/model_B2/encoder_epoch075.pt \
-  --ckpt_C  data/checkpoints/model_C/autoencoder_epoch050.pt \
-  --out_dir data/results/ablation
-
-# Epoch-AUC curve (find best checkpoint for a model)
-python scripts/eval/epoch_auc.py \
-  --ckpt_dir_A data/checkpoints/model_A \
-  --epochs_A 10 20 30 40 50 \
-  --out_dir data/results/epoch_auc
-
-# Scaling curve (reads ablation JSONs)
-python scripts/eval/scaling_curve.py
-
-# Mass decorrelation check
-python scripts/eval/mass_decorr.py \
-  --ckpt data/checkpoints/model_A_10M/encoder_epoch075.pt \
-  --out_dir data/results/mass_decorr
-
-# Signal injection curve (AUC vs S/B ratio)
-python scripts/eval/signal_injection.py \
-  --ckpt data/checkpoints/model_A_10M/encoder_epoch075.pt \
-  --out_dir data/results/signal_injection
-```
-
----
-
-## Hardware
-
-NVIDIA RTX 6000 Ada (49 GB VRAM), 128-core CPU, 251 GB RAM.
-Training times: 2M model ~20 min (50 ep), 10M model ~6 hours (75 ep).
-
----
-
-## Citation
-
-```bibtex
-@article{parashar2026jet,
-  title   = {Self-Supervised Jet Anomaly Detection on Real LHC Data},
-  author  = {Parashar, Animesh},
-  journal = {arXiv preprint},
-  year    = {2026}
-}
-```
-
----
-
-## License
-
-MIT License. See LICENSE file.
+The [AspenOpenJets](https://arxiv.org/abs/2412.10504) and
+[LHC Olympics R&D](https://doi.org/10.5281/zenodo.6466204) source datasets are
+available from their providers. The source code is MIT licensed; see [LICENSE](LICENSE).

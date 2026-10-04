@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checks": [
+    "aspen_train",
+    "lhco_train",
+    "lhco_reference",
+    "108 independent Spearman correlations and 18 rank inequalities"
+  ],
+  "max_spearman_error": 1.1102230246251565e-16,
+  "diagnostic_hashes": {
+    "data/results/transfer_support_20261003.json": "5502f02e85b79a137d25cb5eb9e89bb1b06f213146d43b3055dedff7cc01890a",
+    "data/results/transfer_representations_20261003.json": "8f75f2d8ccd9a244faac1e72e5f4981b853372a099cd5e26a80965a847b22c93"
+  },
+  "script_sha256": "c1b66eb32bafba2bdae487ee065433de391be92e1f1a3b2ee5a148f09f7395a0"
+}

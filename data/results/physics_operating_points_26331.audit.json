@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "rows_checked": 58,
+  "independent_ks_js_max_error": 6.750155989720952e-14,
+  "calibration_assessment_overlap": 0,
+  "bootstrap_shape": [
+    1000,
+    58,
+    5
+  ],
+  "all_counts_thresholds_intervals_recomputed": true
+}

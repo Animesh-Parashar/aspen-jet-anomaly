@@ -1,0 +1,8 @@
+{
+  "data/results/physics_operating_points_26331.rachel.json": "a18d10df41238147c027f19c6bd0c17e9b80756040f6174cd7bd70596774c7ba",
+  "data/results/physics_operating_points_26331.rachel.npz": "2ec950351a23079753e3240212c5be9480f05f8a026362b450ffd49336c59094",
+  "data/results/physics_operating_points_26331.audit.json": "22cdbb43dcf3926eab25d4edb5e16aad7449884255f594ad0e170603033a5741",
+  "docs/physics_operating_points_protocol_20261003.md": "cc76d8da22e4b46b271e649068dfee0eebad232d9a579e62a7ff3a1efdee2a33",
+  "manuscript/revision_20261002/physics_results.py": "26cd7b1bca2afbd51e0f388d3d68e0f584496f01e3faf408dcd0fb007b18f69a",
+  "manuscript/revision_20261002/figures/physics_tradeoff.pdf": "99faa5e5f388805d852a8d3e73b8766af81dd9f51b5c123cda993359d11a3bab"
+}

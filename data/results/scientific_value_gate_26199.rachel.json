@@ -1,0 +1,762 @@
+{
+  "stage": "signal_validation_development_not_final",
+  "results": {
+    "mass_high": {
+      "auc": 0.63621875,
+      "working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 479.4552001953125,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.0235,
+          "background_passing": 235,
+          "rejection": 42.5531914893617
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 127.34884643554688,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.5164,
+          "background_passing": 5164,
+          "rejection": 1.9364833462432225
+        }
+      ],
+      "auc_percentile_95": [
+        0.62251403375,
+        0.6474054975000001
+      ],
+      "paired_auc_difference": {
+        "observable_density": {
+          "point": -0.16653114999999996,
+          "percentile_95": [
+            -0.17702436625,
+            -0.158358005
+          ]
+        },
+        "random_backbone": {
+          "point": 0.023637675000000025,
+          "percentile_95": [
+            0.010303668749999998,
+            0.0367396462500001
+          ]
+        }
+      },
+      "pt_bins": [
+        {
+          "bin": 0,
+          "signal": 65,
+          "background": 2467,
+          "auc": null
+        },
+        {
+          "bin": 1,
+          "signal": 86,
+          "background": 2410,
+          "auc": null
+        },
+        {
+          "bin": 2,
+          "signal": 235,
+          "background": 2564,
+          "auc": 0.5668171407707372
+        },
+        {
+          "bin": 3,
+          "signal": 1614,
+          "background": 2559,
+          "auc": 0.627540236296997
+        }
+      ]
+    },
+    "pt_high": {
+      "auc": 0.8316206000000002,
+      "working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 1717.8189697265625,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.0605,
+          "background_passing": 605,
+          "rejection": 16.528925619834713
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 1643.7677001953125,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.0886,
+          "background_passing": 886,
+          "rejection": 11.286681715575622
+        }
+      ],
+      "auc_percentile_95": [
+        0.821361373125,
+        0.84062673625
+      ],
+      "paired_auc_difference": {
+        "observable_density": {
+          "point": 0.028870700000000138,
+          "percentile_95": [
+            0.018909158749999943,
+            0.03730075000000004
+          ]
+        },
+        "random_backbone": {
+          "point": 0.21903952500000012,
+          "percentile_95": [
+            0.20538511249999997,
+            0.23229395062499988
+          ]
+        }
+      },
+      "pt_bins": [
+        {
+          "bin": 0,
+          "signal": 65,
+          "background": 2467,
+          "auc": null
+        },
+        {
+          "bin": 1,
+          "signal": 86,
+          "background": 2410,
+          "auc": null
+        },
+        {
+          "bin": 2,
+          "signal": 235,
+          "background": 2564,
+          "auc": 0.6311556079264447
+        },
+        {
+          "bin": 3,
+          "signal": 1614,
+          "background": 2559,
+          "auc": 0.6481521834398409
+        }
+      ]
+    },
+    "multiplicity_high": {
+      "auc": 0.43113817499999996,
+      "working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 52.0,
+          "achieved_signal_efficiency": 0.3105,
+          "background_efficiency": 0.4571,
+          "background_passing": 4571,
+          "rejection": 2.1877050973528767
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 41.0,
+          "achieved_signal_efficiency": 0.5085,
+          "background_efficiency": 0.614,
+          "background_passing": 6140,
+          "rejection": 1.6286644951140066
+        }
+      ],
+      "auc_percentile_95": [
+        0.41853825375000003,
+        0.443129456875
+      ],
+      "paired_auc_difference": {
+        "observable_density": {
+          "point": -0.37161172500000006,
+          "percentile_95": [
+            -0.384312313125,
+            -0.35920717812499997
+          ]
+        },
+        "random_backbone": {
+          "point": -0.18144290000000007,
+          "percentile_95": [
+            -0.19890294562500002,
+            -0.16316929312500003
+          ]
+        }
+      },
+      "pt_bins": [
+        {
+          "bin": 0,
+          "signal": 65,
+          "background": 2467,
+          "auc": null
+        },
+        {
+          "bin": 1,
+          "signal": 86,
+          "background": 2410,
+          "auc": null
+        },
+        {
+          "bin": 2,
+          "signal": 235,
+          "background": 2564,
+          "auc": 0.4054668569721512
+        },
+        {
+          "bin": 3,
+          "signal": 1614,
+          "background": 2559,
+          "auc": 0.44313555723100867
+        }
+      ]
+    },
+    "multiplicity_low": {
+      "auc": 0.5688618249999999,
+      "working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": -32.0,
+          "achieved_signal_efficiency": 0.302,
+          "background_efficiency": 0.2628,
+          "background_passing": 2628,
+          "rejection": 3.805175038051751
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": -41.0,
+          "achieved_signal_efficiency": 0.5085,
+          "background_efficiency": 0.4012,
+          "background_passing": 4012,
+          "rejection": 2.4925224327018944
+        }
+      ],
+      "auc_percentile_95": [
+        0.5568705431250001,
+        0.58146174625
+      ],
+      "paired_auc_difference": {
+        "observable_density": {
+          "point": -0.23388807500000008,
+          "percentile_95": [
+            -0.2516088906250001,
+            -0.21600195125
+          ]
+        },
+        "random_backbone": {
+          "point": -0.0437192500000001,
+          "percentile_95": [
+            -0.060036705625,
+            -0.025985096875000065
+          ]
+        }
+      },
+      "pt_bins": [
+        {
+          "bin": 0,
+          "signal": 65,
+          "background": 2467,
+          "auc": null
+        },
+        {
+          "bin": 1,
+          "signal": 86,
+          "background": 2410,
+          "auc": null
+        },
+        {
+          "bin": 2,
+          "signal": 235,
+          "background": 2564,
+          "auc": 0.5945331430278488
+        },
+        {
+          "bin": 3,
+          "signal": 1614,
+          "background": 2559,
+          "auc": 0.5568644427689913
+        }
+      ]
+    },
+    "girth_high": {
+      "auc": 0.6893518500000001,
+      "working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.24109795097821554,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.059,
+          "background_passing": 590,
+          "rejection": 16.949152542372882
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.07048711521545092,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.395,
+          "background_passing": 3950,
+          "rejection": 2.531645569620253
+        }
+      ],
+      "auc_percentile_95": [
+        0.67777284125,
+        0.6991674375
+      ],
+      "paired_auc_difference": {
+        "observable_density": {
+          "point": -0.11339804999999992,
+          "percentile_95": [
+            -0.12213951375000003,
+            -0.10619619500000001
+          ]
+        },
+        "random_backbone": {
+          "point": 0.07677077500000007,
+          "percentile_95": [
+            0.06259740250000008,
+            0.09131245500000003
+          ]
+        }
+      },
+      "pt_bins": [
+        {
+          "bin": 0,
+          "signal": 65,
+          "background": 2467,
+          "auc": null
+        },
+        {
+          "bin": 1,
+          "signal": 86,
+          "background": 2410,
+          "auc": null
+        },
+        {
+          "bin": 2,
+          "signal": 235,
+          "background": 2564,
+          "auc": 0.6826932651774156
+        },
+        {
+          "bin": 3,
+          "signal": 1614,
+          "background": 2559,
+          "auc": 0.72586657485571
+        }
+      ]
+    },
+    "observable_density": {
+      "auc": 0.8027499,
+      "working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.6497055943873117,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.0441,
+          "background_passing": 441,
+          "rejection": 22.675736961451246
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.41193542766707264,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.1566,
+          "background_passing": 1566,
+          "rejection": 6.385696040868455
+        }
+      ],
+      "auc_percentile_95": [
+        0.7933835850000001,
+        0.81175369125
+      ],
+      "paired_auc_difference": {
+        "observable_density": {
+          "point": 0.0,
+          "percentile_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "random_backbone": {
+          "point": 0.19016882499999999,
+          "percentile_95": [
+            0.17986215937499997,
+            0.200785031875
+          ]
+        }
+      },
+      "pt_bins": [
+        {
+          "bin": 0,
+          "signal": 65,
+          "background": 2467,
+          "auc": null
+        },
+        {
+          "bin": 1,
+          "signal": 86,
+          "background": 2410,
+          "auc": null
+        },
+        {
+          "bin": 2,
+          "signal": 235,
+          "background": 2564,
+          "auc": 0.7100690410595146
+        },
+        {
+          "bin": 3,
+          "signal": 1614,
+          "background": 2559,
+          "auc": 0.704785888229845
+        }
+      ]
+    },
+    "aspen_contrastive": {
+      "auc": 0.44538625000000004,
+      "working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 2.55810809135437,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.4071,
+          "background_passing": 4071,
+          "rejection": 2.4563989191844753
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 2.3074843883514404,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.5989,
+          "background_passing": 5989,
+          "rejection": 1.6697278343629989
+        }
+      ],
+      "auc_percentile_95": [
+        0.43258575250000003,
+        0.4561052875
+      ],
+      "paired_auc_difference": {
+        "observable_density": {
+          "point": -0.35736365,
+          "percentile_95": [
+            -0.37171716499999996,
+            -0.3456750225
+          ]
+        },
+        "random_backbone": {
+          "point": -0.167194825,
+          "percentile_95": [
+            -0.18080126187499995,
+            -0.15476298999999996
+          ]
+        }
+      },
+      "pt_bins": [
+        {
+          "bin": 0,
+          "signal": 65,
+          "background": 2467,
+          "auc": null
+        },
+        {
+          "bin": 1,
+          "signal": 86,
+          "background": 2410,
+          "auc": null
+        },
+        {
+          "bin": 2,
+          "signal": 235,
+          "background": 2564,
+          "auc": 0.5045606930660205
+        },
+        {
+          "bin": 3,
+          "signal": 1614,
+          "background": 2559,
+          "auc": 0.487016448978821
+        }
+      ]
+    },
+    "lhco_contrastive": {
+      "auc": 0.6060517000000001,
+      "working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 6.309757232666016,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.2004,
+          "background_passing": 2004,
+          "rejection": 4.990019960079841
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 5.854178428649902,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.3381,
+          "background_passing": 3381,
+          "rejection": 2.9577048210588583
+        }
+      ],
+      "auc_percentile_95": [
+        0.59335664125,
+        0.61766132875
+      ],
+      "paired_auc_difference": {
+        "observable_density": {
+          "point": -0.19669819999999993,
+          "percentile_95": [
+            -0.20994579062499996,
+            -0.18292870999999994
+          ]
+        },
+        "random_backbone": {
+          "point": -0.006529374999999948,
+          "percentile_95": [
+            -0.02308658749999993,
+            0.008896826250000007
+          ]
+        }
+      },
+      "pt_bins": [
+        {
+          "bin": 0,
+          "signal": 65,
+          "background": 2467,
+          "auc": null
+        },
+        {
+          "bin": 1,
+          "signal": 86,
+          "background": 2410,
+          "auc": null
+        },
+        {
+          "bin": 2,
+          "signal": 235,
+          "background": 2564,
+          "auc": 0.6304793042785541
+        },
+        {
+          "bin": 3,
+          "signal": 1614,
+          "background": 2559,
+          "auc": 0.6027687104773443
+        }
+      ]
+    },
+    "aspen_reconstruction": {
+      "auc": 0.490951425,
+      "working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 2.3260622024536133,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.3096,
+          "background_passing": 3096,
+          "rejection": 3.2299741602067185
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 2.1004600524902344,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.5052,
+          "background_passing": 5052,
+          "rejection": 1.9794140934283453
+        }
+      ],
+      "auc_percentile_95": [
+        0.4785786525,
+        0.5034182806249999
+      ],
+      "paired_auc_difference": {
+        "observable_density": {
+          "point": -0.311798475,
+          "percentile_95": [
+            -0.3233889693750001,
+            -0.299147874375
+          ]
+        },
+        "random_backbone": {
+          "point": -0.12162965000000003,
+          "percentile_95": [
+            -0.13204162874999995,
+            -0.11040059437500004
+          ]
+        }
+      },
+      "pt_bins": [
+        {
+          "bin": 0,
+          "signal": 65,
+          "background": 2467,
+          "auc": null
+        },
+        {
+          "bin": 1,
+          "signal": 86,
+          "background": 2410,
+          "auc": null
+        },
+        {
+          "bin": 2,
+          "signal": 235,
+          "background": 2564,
+          "auc": 0.4624506256846018
+        },
+        {
+          "bin": 3,
+          "signal": 1614,
+          "background": 2559,
+          "auc": 0.5042627207324732
+        }
+      ]
+    },
+    "reconstruction_error": {
+      "auc": 0.5034064,
+      "working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.009281028062105179,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.2029,
+          "background_passing": 2029,
+          "rejection": 4.928536224741252
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.003905830904841423,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.5512,
+          "background_passing": 5512,
+          "rejection": 1.8142235123367199
+        }
+      ],
+      "auc_percentile_95": [
+        0.48875738875,
+        0.5168149812499999
+      ],
+      "paired_auc_difference": {
+        "observable_density": {
+          "point": -0.2993435,
+          "percentile_95": [
+            -0.3115116375,
+            -0.2884295800000001
+          ]
+        },
+        "random_backbone": {
+          "point": -0.109174675,
+          "percentile_95": [
+            -0.12343004937500007,
+            -0.09514942937500004
+          ]
+        }
+      },
+      "pt_bins": [
+        {
+          "bin": 0,
+          "signal": 65,
+          "background": 2467,
+          "auc": null
+        },
+        {
+          "bin": 1,
+          "signal": 86,
+          "background": 2410,
+          "auc": null
+        },
+        {
+          "bin": 2,
+          "signal": 235,
+          "background": 2564,
+          "auc": 0.44364855445281637
+        },
+        {
+          "bin": 3,
+          "signal": 1614,
+          "background": 2559,
+          "auc": 0.48491680600528886
+        }
+      ]
+    },
+    "random_backbone": {
+      "auc": 0.612581075,
+      "working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.28356093168258667,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.2188,
+          "background_passing": 2188,
+          "rejection": 4.570383912248629
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.23298488557338715,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.3641,
+          "background_passing": 3641,
+          "rejection": 2.7464982147761607
+        }
+      ],
+      "auc_percentile_95": [
+        0.60091624875,
+        0.624649094375
+      ],
+      "paired_auc_difference": {
+        "observable_density": {
+          "point": -0.19016882499999999,
+          "percentile_95": [
+            -0.20078503187500002,
+            -0.17986215937499997
+          ]
+        },
+        "random_backbone": {
+          "point": 0.0,
+          "percentile_95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "pt_bins": [
+        {
+          "bin": 0,
+          "signal": 65,
+          "background": 2467,
+          "auc": null
+        },
+        {
+          "bin": 1,
+          "signal": 86,
+          "background": 2410,
+          "auc": null
+        },
+        {
+          "bin": 2,
+          "signal": 235,
+          "background": 2564,
+          "auc": 0.5216881866764032
+        },
+        {
+          "bin": 3,
+          "signal": 1614,
+          "background": 2559,
+          "auc": 0.5514692174229691
+        }
+      ]
+    }
+  },
+  "checkpoint_sha256": {
+    "aspen_contrastive": "93709312f8cfc93aa59100fced18cf372e43fa969b9734489b420dbf37f9cc6d",
+    "lhco_contrastive": "28c31e780a9de461aae2ce7961947ac65d7521f313292113e17629a87b7f98ce",
+    "aspen_reconstruction": "61c0b17a5f0ce7a3ed0d80b1680e56ed15696ed427db9f13dddafee1f5762bee"
+  },
+  "pt_edges": [
+    704.701171875,
+    1238.7889404296875,
+    1307.7435302734375,
+    1433.3758239746094,
+    3333.915771484375
+  ],
+  "script_sha256": "f616a4e4a6d115b32b9032c4cf0fcf7713d1d46e47acac1aa3810c0da73da817",
+  "protocol_sha256": "d80c0df40dd3ece80f9aad590a34499214ba7d02e1d0c032e22ce8569fcb2b60",
+  "limitations": [
+    "Single training seed; bootstrap conditional on fixed neighbor pool.",
+    "Signal validation explicitly used for development; final test/reference partitions excluded.",
+    "One R&D signal sample; no multiple-topology or discovery claim.",
+    "Zero-passing-background rejection is null; working points are empirical, not calibrated selections."
+  ]
+}

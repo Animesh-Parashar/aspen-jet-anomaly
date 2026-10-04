@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "domain": "lhco",
+  "rows": 100000,
+  "event_overlap_between_partitions": 0,
+  "duplicate_source_rows": 0,
+  "output_counts": {
+    "signal/validation": 49945,
+    "signal/test": 50055
+  }
+}

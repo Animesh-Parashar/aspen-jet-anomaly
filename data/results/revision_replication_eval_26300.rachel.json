@@ -1,0 +1,922 @@
+{
+  "stage": "two_prong_development_not_final",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "results": {
+    "mass_high": {
+      "original_auc": 0.63621875,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 479.4552001953125,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.0235,
+          "background_passing": 235,
+          "rejection": 42.5531914893617
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 127.34884643554688,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.5164,
+          "background_passing": 5164,
+          "rejection": 1.9364833462432225
+        }
+      ],
+      "common_pt_auc": 0.6194803870333884,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 484.2067565917969,
+          "achieved_signal_efficiency": 0.300081064369783,
+          "background_efficiency": 0.04885052367377898,
+          "rejection": 20.47060962289664
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 132.66868591308594,
+          "achieved_signal_efficiency": 0.5001698577149554,
+          "background_efficiency": 0.5327330287545358,
+          "rejection": 1.8771128239183459
+        }
+      ]
+    },
+    "pt_high": {
+      "original_auc": 0.8316206000000002,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 1717.8189697265625,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.0605,
+          "background_passing": 605,
+          "rejection": 16.528925619834713
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 1643.7677001953125,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.0886,
+          "background_passing": 886,
+          "rejection": 11.286681715575622
+        }
+      ],
+      "common_pt_auc": 0.49276681841730474,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 1737.48583984375,
+          "achieved_signal_efficiency": 0.3003767426143349,
+          "background_efficiency": 0.29100850546780066,
+          "rejection": 3.4363256784968694
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 1657.788818359375,
+          "achieved_signal_efficiency": 0.5002462487507818,
+          "background_efficiency": 0.4611178614823815,
+          "rejection": 2.168642951251647
+        }
+      ]
+    },
+    "multiplicity_high": {
+      "original_auc": 0.43113817499999996,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 52.0,
+          "achieved_signal_efficiency": 0.3105,
+          "background_efficiency": 0.4571,
+          "background_passing": 4571,
+          "rejection": 2.1877050973528767
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 41.0,
+          "achieved_signal_efficiency": 0.5085,
+          "background_efficiency": 0.614,
+          "background_passing": 6140,
+          "rejection": 1.6286644951140066
+        }
+      ],
+      "common_pt_auc": 0.44630827205566237,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 53.0,
+          "achieved_signal_efficiency": 0.30811290774838773,
+          "background_efficiency": 0.43985887917959515,
+          "rejection": 2.2734564364487873
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 42.0,
+          "achieved_signal_efficiency": 0.5040828761854091,
+          "background_efficiency": 0.5865548354403273,
+          "rejection": 1.7048704393499698
+        }
+      ]
+    },
+    "multiplicity_low": {
+      "original_auc": 0.5688618249999999,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": -32.0,
+          "achieved_signal_efficiency": 0.302,
+          "background_efficiency": 0.2628,
+          "background_passing": 2628,
+          "rejection": 3.805175038051751
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": -41.0,
+          "achieved_signal_efficiency": 0.5085,
+          "background_efficiency": 0.4012,
+          "background_passing": 4012,
+          "rejection": 2.4925224327018944
+        }
+      ],
+      "common_pt_auc": 0.553691727944339,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": -33.0,
+          "achieved_signal_efficiency": 0.315207388181498,
+          "background_efficiency": 0.2982862760594407,
+          "rejection": 3.3524841075850436
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": -42.0,
+          "achieved_signal_efficiency": 0.520639959162251,
+          "background_efficiency": 0.4256611878281946,
+          "rejection": 2.3492863070325782
+        }
+      ]
+    },
+    "girth_high": {
+      "original_auc": 0.6893518500000001,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.24109795097821554,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.059,
+          "background_passing": 590,
+          "rejection": 16.949152542372882
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.07048711521545092,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.395,
+          "background_passing": 3950,
+          "rejection": 2.531645569620253
+        }
+      ],
+      "common_pt_auc": 0.7340187829025435,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.24767209368843576,
+          "achieved_signal_efficiency": 0.30047290544766947,
+          "background_efficiency": 0.04318887265083944,
+          "rejection": 23.15411212708659
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.06933015598043002,
+          "achieved_signal_efficiency": 0.5005518128940878,
+          "background_efficiency": 0.340764881717945,
+          "rejection": 2.9345746984212755
+        }
+      ]
+    },
+    "observable_density": {
+      "original_auc": 0.8027499,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.6497055943873117,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.0441,
+          "background_passing": 441,
+          "rejection": 22.675736961451246
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.41193542766707264,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.1566,
+          "background_passing": 1566,
+          "rejection": 6.385696040868455
+        }
+      ],
+      "common_pt_auc": 0.6517395988224943,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.6892683851398717,
+          "achieved_signal_efficiency": 0.30029675670623424,
+          "background_efficiency": 0.12207977650906154,
+          "rejection": 8.191364930339413
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.4358449215124846,
+          "achieved_signal_efficiency": 0.5004376756993824,
+          "background_efficiency": 0.335368316539587,
+          "rejection": 2.9817962839133005
+        }
+      ]
+    },
+    "aspen_seed17": {
+      "original_auc": 0.44538625000000004,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 2.55810809135437,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.4071,
+          "background_passing": 4071,
+          "rejection": 2.4563989191844753
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 2.3074843883514404,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.5989,
+          "background_passing": 5989,
+          "rejection": 1.6697278343629989
+        }
+      ],
+      "common_pt_auc": 0.490442725088341,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 2.5496137142181396,
+          "achieved_signal_efficiency": 0.30060681443988296,
+          "background_efficiency": 0.32666153718157315,
+          "rejection": 3.0612725594447783
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 2.298177719116211,
+          "achieved_signal_efficiency": 0.5003657782538986,
+          "background_efficiency": 0.5466235707897522,
+          "rejection": 1.8294125124447478
+        }
+      ]
+    },
+    "lhco_seed17": {
+      "original_auc": 0.6060517000000001,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 6.309757232666016,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.2004,
+          "background_passing": 2004,
+          "rejection": 4.990019960079841
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 5.854178428649902,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.3381,
+          "background_passing": 3381,
+          "rejection": 2.9577048210588583
+        }
+      ],
+      "common_pt_auc": 0.5823574735760698,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 6.316157817840576,
+          "achieved_signal_efficiency": 0.3001952015644884,
+          "background_efficiency": 0.23863280731826117,
+          "rejection": 4.190538640675313
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 5.856876373291016,
+          "achieved_signal_efficiency": 0.5005518128940878,
+          "background_efficiency": 0.37365530774980055,
+          "rejection": 2.676263334842281
+        }
+      ]
+    },
+    "random_seed17": {
+      "original_auc": 0.612581075,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.28356093168258667,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.2188,
+          "background_passing": 2188,
+          "rejection": 4.570383912248629
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.23298488557338715,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.3641,
+          "background_passing": 3641,
+          "rejection": 2.7464982147761607
+        }
+      ],
+      "common_pt_auc": 0.504101851568509,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.28874680399894714,
+          "achieved_signal_efficiency": 0.3002149733619965,
+          "background_efficiency": 0.31782099389405166,
+          "rejection": 3.146425249470331
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.2371932417154312,
+          "achieved_signal_efficiency": 0.5001896295124634,
+          "background_efficiency": 0.510017964727809,
+          "rejection": 1.960715247616207
+        }
+      ]
+    },
+    "aspen_seed29": {
+      "original_auc": 0.56540515,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 1.8763314485549927,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.26,
+          "background_passing": 2600,
+          "rejection": 3.846153846153846
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 1.6834869384765625,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.4154,
+          "background_passing": 4154,
+          "rejection": 2.407318247472316
+        }
+      ],
+      "common_pt_auc": 0.5650572480494911,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 1.8736095428466797,
+          "achieved_signal_efficiency": 0.3004108939009397,
+          "background_efficiency": 0.23827729500478245,
+          "rejection": 4.196790969865295
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 1.682119369506836,
+          "achieved_signal_efficiency": 0.500313652605923,
+          "background_efficiency": 0.4141734803023841,
+          "rejection": 2.4144472004096196
+        }
+      ]
+    },
+    "lhco_seed29": {
+      "original_auc": 0.3058206,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 5.3118109703063965,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.5567,
+          "background_passing": 5567,
+          "rejection": 1.7962996227770793
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 4.287968635559082,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.8376,
+          "background_passing": 8376,
+          "rejection": 1.1938872970391594
+        }
+      ],
+      "common_pt_auc": 0.4729396088230041,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 5.031436920166016,
+          "achieved_signal_efficiency": 0.30028956696168585,
+          "background_efficiency": 0.3252659279659854,
+          "rejection": 3.0744074740732596
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 4.032025337219238,
+          "achieved_signal_efficiency": 0.5005221551978258,
+          "background_efficiency": 0.5593073822855916,
+          "rejection": 1.7879256231404137
+        }
+      ]
+    },
+    "random_seed29": {
+      "original_auc": 0.6443551,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.3095399737358093,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.1847,
+          "background_passing": 1847,
+          "rejection": 5.414185165132648
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.26085206866264343,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.3059,
+          "background_passing": 3059,
+          "rejection": 3.2690421706440014
+        }
+      ],
+      "common_pt_auc": 0.5325858625049569,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.31636348366737366,
+          "achieved_signal_efficiency": 0.3004108939009397,
+          "background_efficiency": 0.2842938558719117,
+          "rejection": 3.5174872032779665
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.26458317041397095,
+          "achieved_signal_efficiency": 0.5002516410591932,
+          "background_efficiency": 0.4472747011430914,
+          "rejection": 2.235762491024686
+        }
+      ]
+    },
+    "aspen_seed43": {
+      "original_auc": 0.47576112500000006,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 2.3204166889190674,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.3632,
+          "background_passing": 3632,
+          "rejection": 2.753303964757709
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 2.060642719268799,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.525,
+          "background_passing": 5250,
+          "rejection": 1.9047619047619047
+        }
+      ],
+      "common_pt_auc": 0.5095743233924983,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 2.3075811862945557,
+          "achieved_signal_efficiency": 0.30016284771402074,
+          "background_efficiency": 0.3156182146664943,
+          "rejection": 3.16838494589634
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 2.0544180870056152,
+          "achieved_signal_efficiency": 0.5005194590436202,
+          "background_efficiency": 0.4792823347812232,
+          "rejection": 2.0864528638562643
+        }
+      ]
+    },
+    "lhco_seed43": {
+      "original_auc": 0.73325185,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 6.3568501472473145,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.0888,
+          "background_passing": 888,
+          "rejection": 11.26126126126126
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 5.904873847961426,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.1863,
+          "background_passing": 1863,
+          "rejection": 5.367686527106817
+        }
+      ],
+      "common_pt_auc": 0.6132412538128599,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 6.420391082763672,
+          "achieved_signal_efficiency": 0.30007117847102893,
+          "background_efficiency": 0.177748125350612,
+          "rejection": 5.625938377844934
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 5.971980094909668,
+          "achieved_signal_efficiency": 0.5003855500514066,
+          "background_efficiency": 0.32567984384734755,
+          "rejection": 3.0705001211825667
+        }
+      ]
+    },
+    "random_seed43": {
+      "original_auc": 0.6169373499999999,
+      "original_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.27254045009613037,
+          "achieved_signal_efficiency": 0.3,
+          "background_efficiency": 0.1985,
+          "background_passing": 1985,
+          "rejection": 5.037783375314861
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.2239558845758438,
+          "achieved_signal_efficiency": 0.5,
+          "background_efficiency": 0.3365,
+          "background_passing": 3365,
+          "rejection": 2.9717682020802374
+        }
+      ],
+      "common_pt_auc": 0.5050971510152671,
+      "common_pt_working_points": [
+        {
+          "target_signal_efficiency": 0.3,
+          "threshold": 0.2788402736186981,
+          "achieved_signal_efficiency": 0.3000190528230532,
+          "background_efficiency": 0.2944294954506677,
+          "rejection": 3.3963988508330414
+        },
+        {
+          "target_signal_efficiency": 0.5,
+          "threshold": 0.22882571816444397,
+          "achieved_signal_efficiency": 0.5003855500514066,
+          "background_efficiency": 0.4854217512965527,
+          "rejection": 2.060064258202312
+        }
+      ]
+    }
+  },
+  "summary": {
+    "original_auc": {
+      "aspen": {
+        "per_seed": [
+          0.44538625000000004,
+          0.56540515,
+          0.47576112500000006
+        ],
+        "mean": 0.49551750833333336,
+        "sample_sd": 0.06240088221421799,
+        "conditional_event_bootstrap_95": [
+          0.48374641770833327,
+          0.5071927808333334
+        ]
+      },
+      "lhco": {
+        "per_seed": [
+          0.6060517000000001,
+          0.3058206,
+          0.73325185
+        ],
+        "mean": 0.5483747166666667,
+        "sample_sd": 0.21947515616571694,
+        "conditional_event_bootstrap_95": [
+          0.538078240625,
+          0.5587987102083333
+        ]
+      },
+      "random": {
+        "per_seed": [
+          0.612581075,
+          0.6443551,
+          0.6169373499999999
+        ],
+        "mean": 0.6246245083333333,
+        "sample_sd": 0.017225459895354248,
+        "conditional_event_bootstrap_95": [
+          0.6125420135416667,
+          0.6371444364583333
+        ]
+      },
+      "paired_aspen_minus_lhco": {
+        "per_seed": [
+          -0.16066545000000004,
+          0.25958455,
+          -0.257490725
+        ],
+        "mean": -0.05285720833333333,
+        "sample_sd": 0.27487937851451355,
+        "conditional_event_bootstrap_95": [
+          -0.06564041958333336,
+          -0.03888084125000004
+        ]
+      }
+    },
+    "common_pt_auc": {
+      "aspen": {
+        "per_seed": [
+          0.490442725088341,
+          0.5650572480494911,
+          0.5095743233924983
+        ],
+        "mean": 0.5216914321767768,
+        "sample_sd": 0.038754999718068985,
+        "conditional_event_bootstrap_95": [
+          0.5061271959999386,
+          0.537683880486902
+        ]
+      },
+      "lhco": {
+        "per_seed": [
+          0.5823574735760698,
+          0.4729396088230041,
+          0.6132412538128599
+        ],
+        "mean": 0.5561794454039779,
+        "sample_sd": 0.07372316302186854,
+        "conditional_event_bootstrap_95": [
+          0.5411379418072547,
+          0.571154997285857
+        ]
+      },
+      "random": {
+        "per_seed": [
+          0.504101851568509,
+          0.5325858625049569,
+          0.5050971510152671
+        ],
+        "mean": 0.5139282883629109,
+        "sample_sd": 0.01616559494409761,
+        "conditional_event_bootstrap_95": [
+          0.49662782248739124,
+          0.5308654141202799
+        ]
+      },
+      "paired_aspen_minus_lhco": {
+        "per_seed": [
+          -0.09191474848772879,
+          0.09211763922648697,
+          -0.10366693042036157
+        ],
+        "mean": -0.03448801322720113,
+        "sample_sd": 0.10980105586906927,
+        "conditional_event_bootstrap_95": [
+          -0.05413407939077043,
+          -0.01459101739869534
+        ]
+      }
+    }
+  },
+  "pt_edges": [
+    704.701171875,
+    1197.7918212890625,
+    1208.2903076171874,
+    1217.572979736328,
+    1227.81787109375,
+    1238.7889404296875,
+    1250.7562744140625,
+    1263.598828125,
+    1277.4877685546876,
+    1292.4886535644532,
+    1307.7435302734375,
+    1327.2752746582032,
+    1348.6635498046876,
+    1372.1426696777344,
+    1398.829931640625,
+    1433.3758239746094,
+    1474.9763916015625,
+    1528.588348388672,
+    1610.7789672851566,
+    1746.2622924804691,
+    3333.915771484375
+  ],
+  "bin_counts": [
+    {
+      "bin": 0,
+      "background": 479,
+      "signal": 17,
+      "supported": false
+    },
+    {
+      "bin": 1,
+      "background": 486,
+      "signal": 5,
+      "supported": false
+    },
+    {
+      "bin": 2,
+      "background": 494,
+      "signal": 13,
+      "supported": false
+    },
+    {
+      "bin": 3,
+      "background": 490,
+      "signal": 9,
+      "supported": false
+    },
+    {
+      "bin": 4,
+      "background": 518,
+      "signal": 21,
+      "supported": false
+    },
+    {
+      "bin": 5,
+      "background": 491,
+      "signal": 11,
+      "supported": false
+    },
+    {
+      "bin": 6,
+      "background": 509,
+      "signal": 12,
+      "supported": false
+    },
+    {
+      "bin": 7,
+      "background": 503,
+      "signal": 18,
+      "supported": false
+    },
+    {
+      "bin": 8,
+      "background": 479,
+      "signal": 24,
+      "supported": false
+    },
+    {
+      "bin": 9,
+      "background": 428,
+      "signal": 21,
+      "supported": false
+    },
+    {
+      "bin": 10,
+      "background": 523,
+      "signal": 26,
+      "supported": false
+    },
+    {
+      "bin": 11,
+      "background": 506,
+      "signal": 28,
+      "supported": false
+    },
+    {
+      "bin": 12,
+      "background": 504,
+      "signal": 36,
+      "supported": true
+    },
+    {
+      "bin": 13,
+      "background": 516,
+      "signal": 59,
+      "supported": true
+    },
+    {
+      "bin": 14,
+      "background": 515,
+      "signal": 86,
+      "supported": true
+    },
+    {
+      "bin": 15,
+      "background": 470,
+      "signal": 85,
+      "supported": true
+    },
+    {
+      "bin": 16,
+      "background": 526,
+      "signal": 134,
+      "supported": true
+    },
+    {
+      "bin": 17,
+      "background": 508,
+      "signal": 262,
+      "supported": true
+    },
+    {
+      "bin": 18,
+      "background": 527,
+      "signal": 676,
+      "supported": true
+    },
+    {
+      "bin": 19,
+      "background": 528,
+      "signal": 457,
+      "supported": true
+    }
+  ],
+  "provenance": {
+    "aspen_seed17": {
+      "folder": "data/results/convergence_extensions_26172.rachel/aspen_contrastive",
+      "checkpoint_sha256": "93709312f8cfc93aa59100fced18cf372e43fa969b9734489b420dbf37f9cc6d",
+      "manifest_sha256": "ad49c42a1626049e747fa6254a0bfa409a9b7a34730ab0dc25bd4ec5d6a456b2",
+      "initial_sha256": "437ed96a9e560479c93e9e33055724e481c75c60383f2d90f5f0ac248e3c8fad"
+    },
+    "lhco_seed17": {
+      "folder": "data/results/convergence_extensions_26172.rachel/lhco_contrastive",
+      "checkpoint_sha256": "28c31e780a9de461aae2ce7961947ac65d7521f313292113e17629a87b7f98ce",
+      "manifest_sha256": "b5d735bcf559bc9aca67e1b31bdbf41dcaf405f77db23470ff8bb0813234b48e",
+      "initial_sha256": "437ed96a9e560479c93e9e33055724e481c75c60383f2d90f5f0ac248e3c8fad"
+    },
+    "aspen_seed29": {
+      "folder": "data/results/revision_replication_26277.rachel/seed29_aspen",
+      "checkpoint_sha256": "aa1a5f2407c7a3c56675d138a29980722aaa4e3464ff0cd7d92ecfbc15036148",
+      "manifest_sha256": "7d9956ee0f996da34cd1f02f2345f71c2f93ba204b8b9487210d97f64f582087",
+      "initial_sha256": "445cd83a7799c558354f007c5288c36234d96677731ac6cc3f20150034f20995"
+    },
+    "lhco_seed29": {
+      "folder": "data/results/revision_replication_26277.rachel/seed29_lhco",
+      "checkpoint_sha256": "c799b515e07e995da8593f23dcce196de94e01e1ea52014153cc987c429aa9a8",
+      "manifest_sha256": "ece3ea56a937ec3bc3999a8f8774c9ca1ef17bc851cbb4439902625592695fdc",
+      "initial_sha256": "445cd83a7799c558354f007c5288c36234d96677731ac6cc3f20150034f20995"
+    },
+    "aspen_seed43": {
+      "folder": "data/results/revision_seed43_retry_26292.rachel/seed43_aspen",
+      "checkpoint_sha256": "a26e4850b0a683f9a3790ce89738085c7331838df00d4cae6820ce7acf6d02c1",
+      "manifest_sha256": "cb51b12c3eda45ad7e6d9dd66553c61b6cf6a492a6d6d2fd3f817c4d8bea5026",
+      "initial_sha256": "420ccd6b215b5391f4f36cc1cedeca0524f51d76ac333452855033a06db721db"
+    },
+    "lhco_seed43": {
+      "folder": "data/results/revision_seed43_retry_26292.rachel/seed43_lhco",
+      "checkpoint_sha256": "e171c03034af5a4653563739d2c00b3c099fd8cd922444636daab0c33a81da74",
+      "manifest_sha256": "374464af1a9556c16cafada04e381bbd35bfc09bff4e122d45e32086e3318e9d",
+      "initial_sha256": "420ccd6b215b5391f4f36cc1cedeca0524f51d76ac333452855033a06db721db"
+    }
+  },
+  "distance_audits": {
+    "aspen_seed17": {
+      "independent_distance_max_error": 1.5168983624747057e-07
+    },
+    "lhco_seed17": {
+      "independent_distance_max_error": 3.37572704900424e-07
+    },
+    "random_seed17": {
+      "independent_distance_max_error": 1.9515263738334454e-08
+    },
+    "aspen_seed29": {
+      "independent_distance_max_error": 1.3867475079365477e-07
+    },
+    "lhco_seed29": {
+      "independent_distance_max_error": 2.8671937801760805e-07
+    },
+    "random_seed29": {
+      "independent_distance_max_error": 1.946211158898592e-08
+    },
+    "aspen_seed43": {
+      "independent_distance_max_error": 1.5464434044432096e-07
+    },
+    "lhco_seed43": {
+      "independent_distance_max_error": 2.3872215226816706e-07
+    },
+    "random_seed43": {
+      "independent_distance_max_error": 2.1134132555111762e-08
+    }
+  },
+  "old_cache_sha256": "0e64a830ec7c4657dc0df06055d37710b3cd5a123a8b39c4d4bfb7d13713cb87",
+  "protocol_sha256": "3412384f3ce4b8a7d2a185d38c646805f7cac48f99a07c0483ea52f94a24c080",
+  "source_sha256": {
+    "scripts/validation/revision_replication_eval.py": "460dc3dc557f415d980df685d75a43e0b998385dd046e06d45627af8c3d736b4",
+    "scripts/validation/scientific_value_gate.py": "f616a4e4a6d115b32b9032c4cf0fcf7713d1d46e47acac1aa3810c0da73da817",
+    "scripts/validation/gate_crosscheck.py": "c39a8076f9fceb3f75777424b47a3a57e7b6b1d673fbfdc7540ec0c69ef20c7a",
+    "src/models/controlled_encoder.py": "4b8e6f5b79761f97d9265225a5c2a6b89d0c40df62f6dce1d7820f23d5f8a828"
+  },
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 20261003,
+    "conditional_on": "all fitted models, fixed reference events and bin edges; weights recomputed per resample"
+  },
+  "limitations": [
+    "Adaptively explored development sample, not final evaluation.",
+    "Three training seeds share fixed samples; seed SD is not a confidence interval.",
+    "Event intervals do not include training or reference-pool uncertainty.",
+    "Working points are empirical descriptive thresholds, not calibrated selections.",
+    "Coarse pT balancing leaves within-bin and other kinematic differences."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "data/results/transfer_support_20261003.json": "5502f02e85b79a137d25cb5eb9e89bb1b06f213146d43b3055dedff7cc01890a",
+  "data/results/transfer_representations_20261003.json": "8f75f2d8ccd9a244faac1e72e5f4981b853372a099cd5e26a80965a847b22c93",
+  "data/results/transfer_diagnostics_crosscheck_20261003.json": "5e7df1c9cf2a6afc89015ff95716027cbe80f3c46ce797fd04e11421558171db",
+  "scripts/validation/transfer_diagnostics_crosscheck.py": "c1b66eb32bafba2bdae487ee065433de391be92e1f1a3b2ee5a148f09f7395a0",
+  "scripts/validation/transfer_diagnostics.py": "8b15e3387237993d1cf925dfd58684b111f007f0a75741999396fcbc2d17aa7f",
+  "docs/transfer_diagnostics_protocol_20261003.md": "4d447af1627778932a0b5294788a5682ebfd909c435532760b64ddd4c4533296",
+  "tests/test_transfer_diagnostics.py": "c6560fe3f985d9c0578cff6342435e334d86a0b8da94b065677b3d81ef99bda3",
+  "manuscript/revision_20261002/diagnostic_assets.py": "6515a67b9234908a06c00d638fadf8c59adbd200330285758e924a55a4dca1b8"
+}

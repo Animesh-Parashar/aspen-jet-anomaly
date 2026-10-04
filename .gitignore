@@ -3,12 +3,25 @@ data/aspen/
 data/lhco/
 data/checkpoints/
 data/results/
+.venv/
+.venv-preprocess/
+manuscript/revision_20261002/*.zip
+manuscript/revision_20261002/reproduction_manifest.json
 
 # Python
 venv/
 __pycache__/
 *.pyc
 *.pyo
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.aux
+*.log
+*.out
+*.synctex.gz
 *.egg-info/
 .eggs/
 dist/
