@@ -2,7 +2,7 @@
 
 Code and numerical results accompanying **Contrastive Pretraining on Real LHC Jets: Transfer, Scorer Dependence and Mass Distortion**, by Animesh Parashar and Aditya Parashar.
 
-[![Paper DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20827791.svg)](https://doi.org/10.5281/zenodo.20827791) · [Reproduction guide](REPRODUCIBILITY.md)
+[![Paper DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23151994.svg)](https://doi.org/10.5281/zenodo.23151994) · [Reproduction guide](REPRODUCIBILITY.md)
 
 The study compares representations pretrained on real AspenOpenJets and simulated LHC Olympics background. It evaluates two- and three-prong anomaly-ranking benchmarks, alternative scorers, and signal efficiency versus background jet-mass distortion. The training samples have very little transverse-momentum overlap, so the comparison does not isolate a causal effect of the pretraining domain. See the paper for full results and limitations.
 

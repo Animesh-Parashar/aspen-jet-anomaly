@@ -1,6 +1,6 @@
 # Reproducing the reported results
 
-This repository supports direct verification of the numerical results of the accompanying paper ([doi:10.5281/zenodo.20827791](https://doi.org/10.5281/zenodo.20827791)) from saved scores. A full rerun from raw events additionally needs the external datasets, preprocessing, trained checkpoints, and embedding caches; those large inputs are not part of this repository.
+This repository supports direct verification of the numerical results of the accompanying paper ([doi:10.5281/zenodo.23151994](https://doi.org/10.5281/zenodo.23151994)) from saved scores. A full rerun from raw events additionally needs the external datasets, preprocessing, trained checkpoints, and embedding caches; those large inputs are not part of this repository.
 
 ## Numerical verification
 
