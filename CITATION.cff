@@ -10,3 +10,15 @@ authors:
 version: 2.0.0
 date-released: '2026-10-04'
 license: MIT
+preferred-citation:
+  type: generic
+  title: 'Contrastive Pretraining on Real LHC Jets: Transfer, Scorer Dependence and Mass Distortion'
+  authors:
+    - family-names: Parashar
+      given-names: Animesh
+    - family-names: Parashar
+      given-names: Aditya
+  year: 2026
+  version: 2.0.0
+  doi: 10.5281/zenodo.23151994
+  notes: Preprint
